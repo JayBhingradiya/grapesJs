@@ -21,13 +21,13 @@ const Preview = () => {
 
   return (
     <section id="allContents">
-      {data?.components?.map((item) => {
-        console.log("item?.components", item);
+      {data?.components?.map((item, index) => {
         if (item.type === "custom-slider") {
-          return <ImageSlider slides={item?.attributes?.slides} />;
+          return <ImageSlider key={index} slides={item?.attributes?.slides} />;
         } else if (item.type === "dynamic-products") {
           return (
             <FeaturedCategory
+              key={index}
               serverSideData={item?.attributes?.serverSideData}
             />
           );
@@ -35,7 +35,10 @@ const Preview = () => {
           return (
             <>
               <style>{item.css}</style>
-              <div dangerouslySetInnerHTML={{ __html: item.html }} />
+              <div
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item.html }}
+              />
             </>
           );
         }
