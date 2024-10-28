@@ -1,0 +1,324 @@
+{
+  "components": [
+    {
+      "type": "custom-slider",
+      "tagName": "div",
+      "attributes": {
+        "slides": [
+          {
+            "image": "https://www.anniesannuals.com/cdn-cgi/image//https://storage.anniesannuals.com/annies/1/store/5/images/main-page-banner-01.jpg",
+            "title": "hello 2",
+            "description": "sadsadsad",
+            "buttonText": "asasd",
+            "buttonBackgroundColor": "white",
+            "textColor": "white",
+            "mediaType": "image"
+          },
+          {
+            "image": "",
+            "title": "",
+            "description": "",
+            "buttonText": "",
+            "buttonBackgroundColor": "",
+            "textColor": "",
+            "mediaType": "image"
+          }
+        ],
+        "id": "9cd45e7b-e6e6-4c48-b824-9965899e08e0-2"
+      },
+      "textcontent": [],
+      "html": "<body id=\"iz7g\"><div slides=\"[object Object],[object Object]\" id=\"9cd45e7b-e6e6-4c48-b824-9965899e08e0-2\"></div><div class=\"gjs-row\" id=\"ierw\"><div class=\"gjs-cell\" id=\"igd6a\"><div id=\"ijrng\">hello section 1</div></div><div class=\"gjs-cell\" id=\"ilpua\"><div id=\"iukog\">Hello section 2</div></div></div><div serverSideData=\"[object Object],[object Object],[object Object],[object Object]\"></div></body>",
+      "css": "* { box-sizing: border-box; } body {margin: 0;}.gjs-row{display:table;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;width:100%;}.gjs-cell{width:8%;display:table-cell;height:75px;}#ijrng{padding:10px;color:#e62f2f;background-color:#131212;}#iukog{padding:10px;background-color:#130808;color:#eb2828;}@media (max-width: 768px){.gjs-cell{width:100%;display:block;}}"
+    },
+    {
+      "type": "",
+      "tagName": "div",
+      "attributes": {},
+      "textcontent": [
+        {
+          "tagName": "div",
+          "type": "",
+          "name": "Cell",
+          "removable": true,
+          "draggable": ".gjs-row",
+          "droppable": true,
+          "badgable": true,
+          "stylable": true,
+          "stylable-require": "",
+          "style-signature": "",
+          "unstylable": "",
+          "highlightable": true,
+          "copyable": true,
+          "resizable": {
+            "tl": 0,
+            "tc": 0,
+            "tr": 0,
+            "cl": 0,
+            "cr": 1,
+            "bl": 0,
+            "br": 0,
+            "minDim": 1,
+            "bc": 0,
+            "currentUnit": 1,
+            "step": 0.2
+          },
+          "editable": false,
+          "layerable": true,
+          "selectable": true,
+          "hoverable": true,
+          "void": false,
+          "state": "",
+          "status": "",
+          "content": "",
+          "icon": "",
+          "style": "",
+          "styles": "",
+          "classes": [
+            {
+              "name": "gjs-cell",
+              "private": 1
+            }
+          ],
+          "script": "",
+          "script-props": "",
+          "script-export": "",
+          "attributes": {},
+          "traits": [
+            {
+              "type": "text",
+              "label": "",
+              "name": "id",
+              "unit": "",
+              "step": 1,
+              "value": "",
+              "default": "",
+              "placeholder": "",
+              "category": "",
+              "changeProp": false,
+              "options": [],
+              "id": "id"
+            },
+            {
+              "type": "text",
+              "label": "",
+              "name": "title",
+              "unit": "",
+              "step": 1,
+              "value": "",
+              "default": "",
+              "placeholder": "",
+              "category": "",
+              "changeProp": false,
+              "options": [],
+              "id": "title"
+            }
+          ],
+          "propagate": "",
+          "dmode": "",
+          "toolbar": [
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z\" /></svg>"
+            },
+            {
+              "attributes": {
+                "class": "gjs-no-touch-actions",
+                "draggable": true
+              },
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M13,6V11H18V7.75L22.25,12L18,16.25V13H13V18H16.25L12,22.25L7.75,18H11V13H6V16.25L1.75,12L6,7.75V11H11V6H7.75L12,1.75L16.25,6H13Z\"/></svg>",
+              "command": "tlb-move"
+            },
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\" /></svg>",
+              "command": "tlb-clone"
+            },
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z\" /></svg>",
+              "command": "tlb-delete"
+            }
+          ],
+          "delegate": null,
+          "__symbol": 0,
+          "__symbols": 0,
+          "__symbol_ovrd": 0,
+          "_undo": true,
+          "_undoexc": ["status", "open"],
+          "components": [
+            {
+              "type": "text",
+              "attributes": {
+                "id": "ijrng"
+              },
+              "components": [
+                {
+                  "type": "textnode",
+                  "content": "hello section 1"
+                }
+              ]
+            }
+          ],
+          "open": false
+        },
+        {
+          "tagName": "div",
+          "type": "",
+          "name": "Cell",
+          "removable": true,
+          "draggable": ".gjs-row",
+          "droppable": true,
+          "badgable": true,
+          "stylable": true,
+          "stylable-require": "",
+          "style-signature": "",
+          "unstylable": "",
+          "highlightable": true,
+          "copyable": true,
+          "resizable": {
+            "tl": 0,
+            "tc": 0,
+            "tr": 0,
+            "cl": 0,
+            "cr": 1,
+            "bl": 0,
+            "br": 0,
+            "minDim": 1,
+            "bc": 0,
+            "currentUnit": 1,
+            "step": 0.2
+          },
+          "editable": false,
+          "layerable": true,
+          "selectable": true,
+          "hoverable": true,
+          "void": false,
+          "state": "",
+          "status": "",
+          "content": "",
+          "icon": "",
+          "style": "",
+          "styles": "",
+          "classes": [
+            {
+              "name": "gjs-cell",
+              "private": 1
+            }
+          ],
+          "script": "",
+          "script-props": "",
+          "script-export": "",
+          "attributes": {},
+          "traits": [
+            {
+              "type": "text",
+              "label": "",
+              "name": "id",
+              "unit": "",
+              "step": 1,
+              "value": "",
+              "default": "",
+              "placeholder": "",
+              "category": "",
+              "changeProp": false,
+              "options": [],
+              "id": "id"
+            },
+            {
+              "type": "text",
+              "label": "",
+              "name": "title",
+              "unit": "",
+              "step": 1,
+              "value": "",
+              "default": "",
+              "placeholder": "",
+              "category": "",
+              "changeProp": false,
+              "options": [],
+              "id": "title"
+            }
+          ],
+          "propagate": "",
+          "dmode": "",
+          "toolbar": [
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z\" /></svg>"
+            },
+            {
+              "attributes": {
+                "class": "gjs-no-touch-actions",
+                "draggable": true
+              },
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M13,6V11H18V7.75L22.25,12L18,16.25V13H13V18H16.25L12,22.25L7.75,18H11V13H6V16.25L1.75,12L6,7.75V11H11V6H7.75L12,1.75L16.25,6H13Z\"/></svg>",
+              "command": "tlb-move"
+            },
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\" /></svg>",
+              "command": "tlb-clone"
+            },
+            {
+              "label": "<svg viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z\" /></svg>",
+              "command": "tlb-delete"
+            }
+          ],
+          "delegate": null,
+          "__symbol": 0,
+          "__symbols": 0,
+          "__symbol_ovrd": 0,
+          "_undo": true,
+          "_undoexc": ["status", "open"],
+          "components": [
+            {
+              "type": "text",
+              "attributes": {
+                "id": "iukog"
+              },
+              "components": [
+                {
+                  "type": "textnode",
+                  "content": "Hello section 2"
+                }
+              ]
+            }
+          ],
+          "open": true
+        }
+      ],
+      "html": "<body id=\"iz7g\"><div slides=\"[object Object],[object Object]\" id=\"9cd45e7b-e6e6-4c48-b824-9965899e08e0-2\"></div><div class=\"gjs-row\" id=\"ierw\"><div class=\"gjs-cell\" id=\"igd6a\"><div id=\"ijrng\">hello section 1</div></div><div class=\"gjs-cell\" id=\"ilpua\"><div id=\"iukog\">Hello section 2</div></div></div><div serverSideData=\"[object Object],[object Object],[object Object],[object Object]\"></div></body>",
+      "css": "* { box-sizing: border-box; } body {margin: 0;}.gjs-row{display:table;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;width:100%;}.gjs-cell{width:8%;display:table-cell;height:75px;}#ijrng{padding:10px;color:#e62f2f;background-color:#131212;}#iukog{padding:10px;background-color:#130808;color:#eb2828;}@media (max-width: 768px){.gjs-cell{width:100%;display:block;}}"
+    },
+    {
+      "type": "dynamic-products",
+      "tagName": "div",
+      "attributes": {
+        "serverSideData": [
+          {
+            "id": 96,
+            "seName": "perennials-biennials",
+            "image": "/annies/1/category/96/category_195.png",
+            "name": "Perennials & Biennials"
+          },
+          {
+            "id": 164,
+            "seName": "annual",
+            "image": "/annies/1/category/164/category_194.png",
+            "name": "Annuals"
+          },
+          {
+            "id": 209,
+            "seName": "shrubs-trees",
+            "image": "/annies/1/category/209/category_105.jpg",
+            "name": "Shrubs & Trees"
+          },
+          {
+            "id": 210,
+            "seName": "grasses-and-foliage",
+            "image": "/annies/1/category/210/category_63.jpg",
+            "name": "Grasses & Foliage"
+          }
+        ]
+      },
+      "textcontent": [],
+      "html": "<body id=\"iz7g\"><div slides=\"[object Object],[object Object]\" id=\"9cd45e7b-e6e6-4c48-b824-9965899e08e0-2\"></div><div class=\"gjs-row\" id=\"ierw\"><div class=\"gjs-cell\" id=\"igd6a\"><div id=\"ijrng\">hello section 1</div></div><div class=\"gjs-cell\" id=\"ilpua\"><div id=\"iukog\">Hello section 2</div></div></div><div serverSideData=\"[object Object],[object Object],[object Object],[object Object]\"></div></body>",
+      "css": "* { box-sizing: border-box; } body {margin: 0;}.gjs-row{display:table;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;width:100%;}.gjs-cell{width:8%;display:table-cell;height:75px;}#ijrng{padding:10px;color:#e62f2f;background-color:#131212;}#iukog{padding:10px;background-color:#130808;color:#eb2828;}@media (max-width: 768px){.gjs-cell{width:100%;display:block;}}"
+    }
+  ]
+}
