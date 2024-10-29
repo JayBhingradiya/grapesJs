@@ -6,7 +6,7 @@
       "slides": [
         {
           "image": "https://www.anniesannuals.com/cdn-cgi/image//https://storage.anniesannuals.com/annies/1/store/5/images/main-page-banner-01.jpg",
-          "title": "slider 1",
+          "title": "slider 1 title",
           "description": "Slider 1desc",
           "buttonText": "slide 1 button",
           "buttonBackgroundColor": "white",
