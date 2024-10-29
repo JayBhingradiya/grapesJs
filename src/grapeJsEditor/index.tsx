@@ -111,7 +111,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
       });
     };
     initEditor();
-  }, []);
+  }, [serverSideData]);
 
   return (
     <div>
