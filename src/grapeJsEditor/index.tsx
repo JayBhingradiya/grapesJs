@@ -1,8 +1,8 @@
 "use client";
 import grapesjs, { Editor } from "grapesjs";
-import gsBlocksBasic from "grapesjs-blocks-basic";
 import gsPluginForms from "grapesjs-plugin-forms";
 import gsWebpage from "grapesjs-preset-webpage";
+import gsNewsLetter from "grapesjs-preset-newsletter";
 import gsCustome from "grapesjs-custom-code";
 import React, { useEffect, useRef } from "react";
 import "grapesjs/dist/css/grapes.min.css";
@@ -12,6 +12,8 @@ import GsListing from "@/components/listing/gsListing";
 import AddSaveDataPanel from "./panel/saveData";
 import GsSlider from "@/components/customImageSlider/gsSlider";
 import GsFeaturedCategory from "@/components/featuredCategory/gsFeaturedCategory";
+import GenerelStyleManager from "@/app/styleManager/generalStyleManager";
+import ExtraStyleManager from "@/app/styleManager/extra";
 
 interface grapejsEditorProps {
   serverSideData: serversideDataProps[];
@@ -25,13 +27,14 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         height: "100vh",
         container: "#gjs",
         width: "auto",
-        fromElement: true,
+        fromElement: false,
         storageManager: {
           autoload: true,
           autosave: true,
           type: "local",
         },
-        plugins: [gsBlocksBasic, gsPluginForms, gsCustome, gsWebpage],
+        plugins: [gsCustome, gsNewsLetter, gsPluginForms, gsWebpage],
+        selectorManager: { componentFirst: true },
         canvas: {
           styles: [
             "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
@@ -60,6 +63,10 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
       GsListing(editorRef.current, serverSideData);
       GsSlider(editorRef.current);
       GsFeaturedCategory(editorRef.current, serverSideData);
+
+      // Add style Manager
+      ExtraStyleManager(editorRef.current);
+      GenerelStyleManager(editorRef.current);
 
       editorRef.current.Commands.add("save-db", {
         run: async () => {
@@ -104,7 +111,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
       });
     };
     initEditor();
-  }, [serverSideData]);
+  }, []);
 
   return (
     <div>

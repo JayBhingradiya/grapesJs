@@ -18,7 +18,6 @@ const Preview = () => {
     };
     getJsonData();
   }, []);
-
   return (
     <section id="allContents">
       {data?.components?.map((item, index) => {
