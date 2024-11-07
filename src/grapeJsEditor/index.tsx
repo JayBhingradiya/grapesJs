@@ -67,7 +67,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
             //   return { id: projectID, data };
             // },
             // onLoad: (result) => {
-            //   return result.data.data || {};
+            //   return result.data[0].data || {};
             // },
           },
         },
