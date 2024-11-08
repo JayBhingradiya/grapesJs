@@ -24,8 +24,6 @@ export interface Slide {
 }
 
 const GsSlider = (editor: Editor) => {
-  const LOCAL_STORAGE_KEY = "gjs-Data";
-
   const defaultSlides: Slide[] = [
     {
       image:
@@ -38,33 +36,6 @@ const GsSlider = (editor: Editor) => {
       mediaType: "image",
     },
   ];
-
-  const updateSliderDataInLocalStorage = (
-    id: string,
-    newSliderData: Slide[]
-  ) => {
-    const sliderData = localStorage.getItem(LOCAL_STORAGE_KEY);
-    const data = sliderData ? JSON.parse(sliderData) : [];
-
-    const updatedData = data.map((component: any) => {
-      if (component.attributes.id === id) {
-        return {
-          ...component,
-          attributes: {
-            ...component.attributes,
-            slides: newSliderData,
-          },
-        };
-      }
-      return component;
-    });
-
-    if (!updatedData.find((component: any) => component.attributes.id === id)) {
-      updatedData.push({ attributes: { id, slides: newSliderData } });
-    }
-
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedData));
-  };
 
   editor.Components.addType("custom-slider", {
     model: {
@@ -89,18 +60,41 @@ const GsSlider = (editor: Editor) => {
         ],
       },
       init() {
+        const attributes = this.get("attributes");
+        const componentId = attributes ? attributes.id : "";
+        fetch("api/loadData")
+          .then((res) => res.json())
+          .then((response) => {
+            const component = response.data.data.pages[0].frames?.map(
+              (com: any) => {
+                return com.component.components;
+              }
+            );
+            const getAttributes = component[0].map((data: any) => {
+              return data.attributes;
+            });
+            const getComponentFromId = getAttributes.find(
+              (attr: any) => attr.id === componentId
+            );
+            if (getComponentFromId) {
+              this.set("attributes", {
+                slides: getComponentFromId.slides,
+              });
+              getComponentFromId.slides.forEach((_: any, index: number) => {
+                this.addSlideTraits(index);
+              });
+            }
+          });
         this.listenTo(this, "change:attributes", this.updateSlider);
         editor.Commands.add("add-slide", () => {
           this.addSlide();
         });
-        this.loadSliderData();
         this.addSlideTraits(0);
       },
       updateSlider() {
         const attributes = this.get("attributes");
         const slides = attributes ? attributes.slides : defaultSlides;
         this.trigger("slides:updated", slides);
-        this.saveSliderData(slides);
       },
       addSlide() {
         const attributes = this.get("attributes");
@@ -115,14 +109,11 @@ const GsSlider = (editor: Editor) => {
           mediaType: "image",
         });
         this.set("attributes", { slides });
-
         this.addSlideTraits(slides.length - 1);
       },
       addSlideTraits(index: number) {
         const traits = AllTraits(index);
-
         this.addTrait(traits);
-
         this.on(`change:slide${index + 1}_media_type`, (model, value) => {
           handleMediaTypeChangeHandler(model, value, index, defaultSlides);
           model.updateSlider();
@@ -162,34 +153,6 @@ const GsSlider = (editor: Editor) => {
           handleTextColorChangeHandler(model, value, index, defaultSlides);
           model.updateSlider();
         });
-      },
-
-      saveSliderData(slides: Slide[]) {
-        const attribute = this.get("attributes");
-        const id = attribute ? attribute.id : [];
-
-        updateSliderDataInLocalStorage(id, slides);
-      },
-      loadSliderData() {
-        const attributes = this.get("attributes");
-        const id = attributes ? attributes.id : null;
-
-        if (id) {
-          const savedSlides = localStorage.getItem(LOCAL_STORAGE_KEY);
-          if (savedSlides) {
-            const data = JSON.parse(savedSlides);
-            const sliderComponent = data.find(
-              (comp: any) => comp.attributes.id === id
-            );
-            const slides = sliderComponent
-              ? sliderComponent.attributes.slides
-              : defaultSlides;
-            this.set("attributes", { slides });
-            slides.forEach((_: Slide, index: number) => {
-              this.addSlideTraits(index);
-            });
-          }
-        }
       },
     },
     view: {

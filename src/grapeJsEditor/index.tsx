@@ -21,11 +21,11 @@ interface grapejsEditorProps {
 const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
   const editorRef = useRef<Editor | null>(null);
 
-  const loadEndpoint = "api/loadData";
-  const saveEndpoint = "api/saveData";
+  // const loadEndpoint = "api/loadData";
+  // const saveEndpoint = "api/saveData";
 
-  // const loadEndpoint = "/api/loadGrapesData";
-  // const saveEndpoint = "/api/saveGrapesData";
+  const loadEndpoint = "/api/loadGrapesData";
+  const saveEndpoint = "/api/saveGrapesData";
 
   const projectID = "grapesjs";
 
@@ -49,26 +49,26 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
           remote: {
             contentTypeJson: true,
             // For json file
-            urlLoad: loadEndpoint,
-            urlStore: saveEndpoint,
-            onStore: (data) => {
-              console.log("datadatadatadata", data);
-              return { id: projectID, data };
-            },
-            onLoad: (result) => {
-              console.log("data", result);
-              return result.data.data || {};
-            },
-
-            // From Db
             // urlLoad: loadEndpoint,
             // urlStore: saveEndpoint,
             // onStore: (data) => {
+            //   console.log("datadatadatadata", data);
             //   return { id: projectID, data };
             // },
             // onLoad: (result) => {
-            //   return result.data[0].data || {};
+            //   console.log("data", result);
+            //   return result.data.data || {};
             // },
+
+            // From Db
+            urlLoad: loadEndpoint,
+            urlStore: saveEndpoint,
+            onStore: (data) => {
+              return { id: projectID, data };
+            },
+            onLoad: (result) => {
+              return result.data[0].data || {};
+            },
           },
         },
         autosave: true,
@@ -90,16 +90,11 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsSlider(editorRef.current);
     GsFeaturedCategory(editorRef.current, serverSideData);
     GsLogosSlider(editorRef.current);
-
-    // Add style Manager
-    // ExtraStyleManager(editorRef.current);
-    // GenerelStyleManager(editorRef.current);
   }, [serverSideData]);
 
   return (
     <div>
       <div id="gjs"></div>
-      {/* <div id="blocks"></div> */}
     </div>
   );
 };

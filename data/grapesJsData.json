@@ -847,9 +847,43 @@
                   "components": [
                     {
                       "type": "textnode",
-                      "content": "Shop By Brand"
+                      "content": "Shop By Brands"
                     }
                   ]
+                },
+                {
+                  "type": "custom-slider",
+                  "attributes": {
+                    "slides": [
+                      {
+                        "image": "https://www.anniesannuals.com/cdn-cgi/image//https://storage.anniesannuals.com/annies/1/store/5/images/main-page-banner-01.jpg",
+                        "title": "Slider 2",
+                        "description": "Description",
+                        "buttonText": "Slider Button",
+                        "buttonBackgroundColor": "#dd2121",
+                        "textColor": "#ffffff",
+                        "mediaType": "image"
+                      },
+                      {
+                        "image": "",
+                        "title": "Slider2 ",
+                        "description": "Description",
+                        "buttonText": "",
+                        "buttonBackgroundColor": "",
+                        "textColor": "#ffffff",
+                        "mediaType": "image"
+                      }
+                    ],
+                    "id": "2bd45005-87a7-4941-a24a-00cde3d545a8-2"
+                  },
+                  "slide1_title": "Slider 2",
+                  "slide1_description": "Description",
+                  "slide1_button": "Slider Button",
+                  "slide1_button_background": "#dd2121",
+                  "slide2_title": "Slider2 ",
+                  "slide2_description": "Description",
+                  "slide2_text_color": "#ffffff",
+                  "slide1_text_color": "#ffffff"
                 },
                 {
                   "type": "Slider-logos",
