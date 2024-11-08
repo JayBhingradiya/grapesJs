@@ -4,7 +4,7 @@ let db: Db | null = null;
 
 export async function connectToDatabase() {
   if (!client) {
-    client = new MongoClient(process.env.NEXT_PUBLIC_MONGO_URI || "", {});
+    client = new MongoClient(process.env.MONGO_URI || "", {});
     await client.connect();
   }
   if (!db) {
