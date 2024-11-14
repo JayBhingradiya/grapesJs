@@ -1,12 +1,10 @@
-import Preview from "../page";
+import Preview from "../../../components/Preview/preview";
 
-const GeneratePreviewPage = async ({
+export default async function GeneratePreviewPage({
   params,
 }: {
-  params: { slug: string };
-}): Promise<any> => {
-  const { slug } = await params;
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
   return <Preview pageId={slug} />;
-};
-
-export default GeneratePreviewPage;
+}
