@@ -10,7 +10,7 @@ import {
   handleImageLinkChangeHandler,
 } from "./logoChangeHandler";
 
-const GsLogosSlider = (editor: Editor) => {
+const GsLogosSlider = (editor: Editor, pageId: string) => {
   const defaultSlides = [
     {
       image:
@@ -44,7 +44,7 @@ const GsLogosSlider = (editor: Editor) => {
       init() {
         const attributes = this.get("attributes");
         const componentId = attributes ? attributes.id : "";
-        fetch("api/loadData")
+        fetch(`api/loadGrapesData?id=${pageId}`)
           .then((res) => res.json())
           .then((response) => {
             const component = response.data.data.pages[0].frames?.map(
@@ -58,7 +58,6 @@ const GsLogosSlider = (editor: Editor) => {
             const getComponentFromId = getAttributes.find(
               (attr: any) => attr.id === componentId
             );
-
             if (getComponentFromId && getComponentFromId.logoSlides) {
               this.set("attributes", {
                 logoSlides: getComponentFromId.logoSlides,

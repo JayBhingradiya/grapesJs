@@ -1,0 +1,4619 @@
+{
+  "id": "bobcat",
+  "data": {
+    "assets": [
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/culture-values.jpg",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-roger-lano.png",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-kurt-lano.jpg",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-gary-lano.png",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-03.jpg",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-02.jpg",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-01.jpg",
+        "unitDim": "px",
+        "height": 0,
+        "width": 0
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/top-brands-logs13bd631a-03fb-452f-98e5-53c607f9fe4c.png",
+        "unitDim": "px",
+        "height": {
+          "$numberInt": "0"
+        },
+        "width": {
+          "$numberInt": "0"
+        }
+      },
+      {
+        "type": "image",
+        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/attachments-banner.jpg",
+        "unitDim": "px",
+        "height": {
+          "$numberInt": "0"
+        },
+        "width": {
+          "$numberInt": "0"
+        }
+      }
+    ],
+    "styles": [
+      {
+        "selectors": [
+          "#iw36"
+        ],
+        "style": {
+          "padding": "10px",
+          "text-align": "center",
+          "font-size": "34px",
+          "font-weight": "700",
+          "background-color": "#ffffff"
+        }
+      },
+      {
+        "selectors": [
+          "#i16n"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "42px",
+          "background-color": "rgb(255, 255, 255)"
+        }
+      },
+      {
+        "selectors": [
+          "#div4"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "width": "1519.2px",
+          "background": "none"
+        }
+      },
+      {
+        "selectors": [
+          "#headbox"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth"
+        }
+      },
+      {
+        "selectors": [
+          "#Description"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-left": "170px",
+          "padding-right": "170px",
+          "font-size": "20px",
+          "line-height": "24px",
+          "color": "rgb(34, 157, 255) !important",
+          "margin-top": "60px"
+        }
+      },
+      {
+        "selectors": [
+          "#div5"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "width": "1519.2px",
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px",
+          "background": "none"
+        }
+      },
+      {
+        "selectors": [
+          "#div6"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "width": "1519.2px",
+          "background": "none"
+        }
+      },
+      {
+        "selectors": [
+          "#ikc8b"
+        ],
+        "style": {
+          "padding": "10px",
+          "text-align": "center",
+          "font-size": "42px",
+          "font-weight": "700",
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          {
+            "name": "gjs-row",
+            "private": 1
+          }
+        ],
+        "style": {
+          "display": "table",
+          "padding-top": "10px",
+          "padding-right": "10px",
+          "padding-bottom": "10px",
+          "padding-left": "10px",
+          "width": "100%"
+        }
+      },
+      {
+        "selectors": [
+          {
+            "name": "gjs-cell",
+            "private": 1
+          }
+        ],
+        "style": {
+          "width": "100%",
+          "display": "block"
+        },
+        "mediaText": "(max-width: 768px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "gjs-cell30"
+        ],
+        "style": {
+          "width": "100%",
+          "display": "block"
+        },
+        "mediaText": "(max-width: 768px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "gjs-cell70"
+        ],
+        "style": {
+          "width": "100%",
+          "display": "block"
+        },
+        "mediaText": "(max-width: 768px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          {
+            "name": "gjs-cell",
+            "private": 1
+          }
+        ],
+        "style": {
+          "width": "8%",
+          "display": "table-cell",
+          "height": "75px"
+        }
+      },
+      {
+        "selectors": [
+          "#iz3o6"
+        ],
+        "style": {
+          "background-color": "#f8f8f8",
+          "display": "flex"
+        }
+      },
+      {
+        "selectors": [
+          "#iedp2"
+        ],
+        "style": {
+          "padding": "100px 0 0 0",
+          "width": "50%",
+          "height": "auto",
+          "min-height": "75px"
+        }
+      },
+      {
+        "selectors": [
+          "#i3zyh"
+        ],
+        "style": {
+          "padding": "100px 0 0 0",
+          "width": "50%",
+          "height": "auto",
+          "min-height": "75px"
+        }
+      },
+      {
+        "selectors": [
+          "#i9ffa"
+        ],
+        "style": {
+          "color": "black"
+        }
+      },
+      {
+        "selectors": [
+          "#i4qs2"
+        ],
+        "style": {
+          "padding": "10px 10px 0 10px"
+        }
+      },
+      {
+        "selectors": [
+          "#Headline"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "margin-bottom": "24px",
+          "font-size": "42px",
+          "line-height": "52px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#ira2c"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#Description-2"
+        ],
+        "style": {
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "line-height": "30px",
+          "color": "rgb(0, 0, 0) !important"
+        }
+      },
+      {
+        "selectors": [
+          "#isk8ks"
+        ],
+        "style": {
+          "padding": "10px",
+          "font-family": "Georgia, serif",
+          "font-size": "20px"
+        }
+      },
+      {
+        "selectors": [
+          "#ia12by"
+        ],
+        "style": {
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          "#i0ql1"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#itwzc"
+        ],
+        "style": {
+          "padding": "10px",
+          "text-align": "center"
+        }
+      },
+      {
+        "selectors": [
+          "#iuo3l"
+        ],
+        "style": {
+          "padding": "10px 30px 10px 30px",
+          "text-align": "center",
+          "font-size": "42px",
+          "font-weight": "700"
+        }
+      },
+      {
+        "selectors": [
+          "#if8nbf"
+        ],
+        "style": {
+          "color": "black",
+          "border-radius": "10px 10px 10px 10px"
+        }
+      },
+      {
+        "selectors": [
+          "#i1c0fh"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "20px",
+          "align-self": "center",
+          "margin": "0 0px 0px 0px"
+        }
+      },
+      {
+        "selectors": [
+          "#i5z5de"
+        ],
+        "style": {
+          "color": "black",
+          "border-radius": "10px 10px 10px 10px"
+        }
+      },
+      {
+        "selectors": [
+          "#i4be4f"
+        ],
+        "style": {
+          "color": "black",
+          "border-radius": "10px 10px 10px 10px"
+        }
+      },
+      {
+        "selectors": [
+          "#ihmbk"
+        ],
+        "style": {
+          "background-color": "#f8f8f8"
+        }
+      },
+      {
+        "selectors": [
+          "#i1kw91"
+        ],
+        "style": {
+          "color": "black",
+          "margin": "0 0 20px 0",
+          "padding": "0px 5px 0px 5px"
+        }
+      },
+      {
+        "selectors": [
+          "#it50r4"
+        ],
+        "style": {
+          "color": "black",
+          "margin": "0 0 20px 0",
+          "height": "426px",
+          "padding": "0px 5px 0px 5px"
+        }
+      },
+      {
+        "selectors": [
+          "#ijxq3f"
+        ],
+        "style": {
+          "color": "black",
+          "margin": "0 0 20px 0",
+          "height": "434px",
+          "padding": "0px 5px 0px 5px"
+        }
+      },
+      {
+        "selectors": [
+          "#ikxeaj"
+        ],
+        "style": {
+          "font-size": "20px",
+          "font-weight": "600"
+        }
+      },
+      {
+        "selectors": [
+          "#SubHeadline1"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "margin-bottom": "20px",
+          "font-size": "18px",
+          "line-height": "28px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#i5tsz3"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#Headline2-2"
+        ],
+        "style": {
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "font-size": "20px",
+          "line-height": "34px"
+        }
+      },
+      {
+        "selectors": [
+          "#SubHeadline2"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "margin-bottom": "20px",
+          "font-size": "18px",
+          "line-height": "28px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#Headline3-2"
+        ],
+        "style": {
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "font-size": "20px",
+          "line-height": "34px"
+        }
+      },
+      {
+        "selectors": [
+          "#SubHeadline3"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "margin-bottom": "20px",
+          "font-size": "18px",
+          "line-height": "28px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#i4g9f1"
+        ],
+        "style": {
+          "font-size": "14px"
+        }
+      },
+      {
+        "selectors": [
+          "#i0v5x6"
+        ],
+        "style": {
+          "font-size": "14px"
+        }
+      },
+      {
+        "selectors": [
+          "#i3r49r"
+        ],
+        "style": {
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          "#i7n146"
+        ],
+        "style": {
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          "#i9ed1d"
+        ],
+        "style": {
+          "color": "#4ac54a"
+        }
+      },
+      {
+        "selectors": [
+          "#iu2ifv"
+        ],
+        "style": {
+          "font-size": "14px"
+        }
+      },
+      {
+        "selectors": [
+          "#i67wp9"
+        ],
+        "style": {
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          "#idz20f"
+        ],
+        "style": {
+          "padding": "0px 15px 0px 15px"
+        }
+      },
+      {
+        "selectors": [
+          "#igtjck"
+        ],
+        "style": {
+          "padding": "10px",
+          "text-align": "center",
+          "font-size": "42px",
+          "font-weight": "600",
+          "margin": "100px 0px 19px 0px"
+        }
+      },
+      {
+        "selectors": [
+          "#i66ufq"
+        ],
+        "style": {
+          "padding": "10px",
+          "margin": "0 0 60px 0",
+          "text-align": "center",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#ir8238"
+        ],
+        "style": {
+          "color": "black"
+        }
+      },
+      {
+        "selectors": [
+          "gjs-cell30"
+        ],
+        "style": {
+          "width": "30%"
+        }
+      },
+      {
+        "selectors": [
+          "gjs-cell70"
+        ],
+        "style": {
+          "width": "70%"
+        }
+      },
+      {
+        "selectors": [
+          "#imifkg"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-bottom": "23px",
+          "font-size": "25px",
+          "line-height": "40px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#icfodm"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#ie7yfu"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#i9f7av"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#ibofon"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#i85dca"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#iedp2"
+        ],
+        "style": {
+          "width": "100%"
+        },
+        "mediaText": "(max-width: 992px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iz3o6"
+        ],
+        "style": {
+          "flex-direction": "column-reverse"
+        },
+        "mediaText": "(max-width: 992px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i3zyh"
+        ],
+        "style": {
+          "width": "100%"
+        },
+        "mediaText": "(max-width: 992px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i16n"
+        ],
+        "style": {
+          "font-size": "18px",
+          "line-height": "23px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ikc8b"
+        ],
+        "style": {
+          "font-size": "18px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#if66i"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iedp2"
+        ],
+        "style": {
+          "padding": "0 0px 0px 0px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i3zyh"
+        ],
+        "style": {
+          "padding": "0 0px 0px 0px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ip910f"
+        ],
+        "style": {
+          "height": "auto",
+          "min-height": "75px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i56vdg"
+        ],
+        "style": {
+          "height": "auto",
+          "min-height": "75px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#irj2xe"
+        ],
+        "style": {
+          "height": "auto",
+          "min-height": "75px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#igf7xx"
+        ],
+        "style": {
+          "color": "rgb(31, 31, 31)",
+          "font-family": "monospace",
+          "font-size": "12px",
+          "white-space-collapse": "preserve"
+        }
+      },
+      {
+        "selectors": [
+          "#i9wk4h"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "22px",
+          "font-weight": "600",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#idp4ll"
+        ],
+        "style": {
+          "color": "rgb(31, 31, 31)",
+          "font-family": "monospace",
+          "font-size": "12px",
+          "white-space-collapse": "preserve"
+        }
+      },
+      {
+        "selectors": [
+          "#idp4ll"
+        ],
+        "style": {
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13px",
+          "line-height": "14px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ibu5d9"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#icwb3l"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "22px",
+          "font-weight": "600",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#incuzu"
+        ],
+        "style": {
+          "font-size": "18px",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#i4y6qx"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "22px",
+          "font-weight": "600",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#i3jp27"
+        ],
+        "style": {
+          "font-size": "18px",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#i5ubcr"
+        ],
+        "style": {
+          "padding": "100px 10px 10px 10px",
+          "background-color": "#f8f8f8"
+        }
+      },
+      {
+        "selectors": [
+          "#iuo3l"
+        ],
+        "style": {
+          "font-size": "18px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#inpaq3"
+        ],
+        "style": {
+          "font-size": "18px",
+          "background-color": "rgb(248, 248, 248)"
+        }
+      },
+      {
+        "selectors": [
+          "#itvacm"
+        ],
+        "style": {
+          "flex-direction": "column"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iqr1at"
+        ],
+        "style": {
+          "height": "auto",
+          "min-height": "75px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iwv0ot"
+        ],
+        "style": {
+          "height": "auto",
+          "min-height": "75px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ius7xd"
+        ],
+        "style": {
+          "padding": "10px",
+          "margin": "136px 0px 0px 0px"
+        }
+      },
+      {
+        "selectors": [
+          "#ius7xd"
+        ],
+        "style": {
+          "margin": "0 0px 0px 0px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#io2ck5"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "20px"
+        }
+      },
+      {
+        "selectors": [
+          "#isjhty"
+        ],
+        "style": {
+          "flex-direction": "column"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#idhdtk"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iejiog"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iz7u56"
+        ],
+        "style": {
+          "flex-direction": "column"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i59ghy"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ivxv5b"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ibpdr9"
+        ],
+        "style": {
+          "padding": "10px",
+          "margin": "88px 0px 0px 0px"
+        }
+      },
+      {
+        "selectors": [
+          "#ibpdr9"
+        ],
+        "style": {
+          "margin": "0 0px 0px 0px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ita5vv"
+        ],
+        "style": {
+          "font-size": "20px",
+          "text-align": "center"
+        }
+      },
+      {
+        "selectors": [
+          "#iejiog"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#ixapsp"
+        ],
+        "style": {
+          "padding": "10px",
+          "margin": "122px 0px 0px 0px"
+        }
+      },
+      {
+        "selectors": [
+          "#iohqtq"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "20px"
+        }
+      },
+      {
+        "selectors": [
+          "#isjhty"
+        ],
+        "style": {
+          "display": "flex"
+        }
+      },
+      {
+        "selectors": [
+          "#idhdtk"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#ixapsp"
+        ],
+        "style": {
+          "margin": "0 0px 0px 0px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iz7u56"
+        ],
+        "style": {
+          "display": "flex"
+        }
+      },
+      {
+        "selectors": [
+          "#i59ghy"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#ivxv5b"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#itvacm"
+        ],
+        "style": {
+          "display": "flex"
+        }
+      },
+      {
+        "selectors": [
+          "#iqr1at"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#iwv0ot"
+        ],
+        "style": {
+          "width": "100%",
+          "height": "auto"
+        }
+      },
+      {
+        "selectors": [
+          "#idz20f"
+        ],
+        "style": {
+          "margin": "30px 0 0 0"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#igtjck"
+        ],
+        "style": {
+          "margin": "40px 0px 19px 0px",
+          "font-size": "22px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i3ppsd"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i1ggnh"
+        ],
+        "style": {
+          "font-weight": "600"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#il5xip"
+        ],
+        "style": {
+          "color": "rgb(31, 31, 31)",
+          "font-family": "monospace",
+          "font-size": "12px",
+          "white-space-collapse": "preserve",
+          "background-color": "rgb(255, 255, 255)"
+        }
+      },
+      {
+        "selectors": [
+          "#ij8nxz-3"
+        ],
+        "style": {
+          "border-color": "rgba(229,231,235,var(--tw-border-opacity))",
+          "--tw-border-opacity": "1",
+          "--tw-shadow": "0 0 #0000",
+          "--tw-ring-inset": "var(--tw-empty, )",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 #0000",
+          "--tw-ring-shadow": "0 0 #0000",
+          "text-align": "center",
+          "font-weight": "700",
+          "font-size": "43px"
+        }
+      },
+      {
+        "selectors": [
+          "#ipixpf"
+        ],
+        "style": {
+          "text-align": "center"
+        }
+      },
+      {
+        "selectors": [
+          "#iby1wo"
+        ],
+        "style": {
+          "color": "rgb(31, 31, 31)",
+          "font-family": "monospace",
+          "font-size": "12px",
+          "white-space-collapse": "preserve",
+          "background-color": "rgb(255, 255, 255)"
+        }
+      },
+      {
+        "selectors": [
+          "#icd3j1"
+        ],
+        "style": {
+          "font-size": "18px",
+          "text-align": "right"
+        }
+      },
+      {
+        "selectors": [
+          "#i28se"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ij8nxz-3"
+        ],
+        "style": {
+          "font-size": "22px"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i605ke"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#icf7ph"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ib2ezk"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i0qvgb"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i47fqz"
+        ],
+        "style": {
+          "margin": "30px 0 0 0"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i2is6t"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i6lj0g"
+        ],
+        "style": {
+          "padding": "10px",
+          "font-weight": "600",
+          "font-size": "25px",
+          "color": "#229dff"
+        }
+      },
+      {
+        "selectors": [
+          "#i6lj0g"
+        ],
+        "style": {
+          "font-size": "25px",
+          "color": "#229dff",
+          "font-weight": "700"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iqoghh"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ibcqlb"
+        ],
+        "style": {
+          "padding": "10px",
+          "color": "#229dff",
+          "font-size": "25px"
+        }
+      },
+      {
+        "selectors": [
+          "#ibcqlb"
+        ],
+        "style": {
+          "font-size": "25px",
+          "color": "#229dff",
+          "font-weight": "700"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i9mv43"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#il22ay"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-bottom": "23px",
+          "font-size": "25px",
+          "line-height": "40px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#iun2ll"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#iun2ll"
+        ],
+        "style": {
+          "width": "90%"
+        }
+      },
+      {
+        "selectors": [
+          "#ikxh01"
+        ],
+        "style": {
+          "padding": "10px"
+        }
+      },
+      {
+        "selectors": [
+          "#irvyvg"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#i5ugd6"
+        ],
+        "style": {
+          "padding": "10px",
+          "color": "#229dff",
+          "font-size": "25px"
+        }
+      },
+      {
+        "selectors": [
+          "#i5ugd6"
+        ],
+        "style": {
+          "font-size": "25px",
+          "color": "#229dff",
+          "font-weight": "700"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#izof57"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i5vo4m"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-bottom": "23px",
+          "font-size": "25px",
+          "line-height": "40px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#iuem08"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#i1witg"
+        ],
+        "style": {
+          "padding": "10px"
+        }
+      },
+      {
+        "selectors": [
+          "#ids81i"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ids81i"
+        ],
+        "style": {
+          "width": "90%"
+        }
+      },
+      {
+        "selectors": [
+          "#iu6smp"
+        ],
+        "style": {
+          "padding": "10px",
+          "color": "#229dff",
+          "font-size": "25px"
+        }
+      },
+      {
+        "selectors": [
+          "#iu6smp"
+        ],
+        "style": {
+          "font-size": "25px",
+          "color": "#229dff",
+          "font-weight": "700"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ic09i8"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ivf1xf"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-bottom": "23px",
+          "font-size": "25px",
+          "line-height": "40px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#iz5uee"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#io1mj6"
+        ],
+        "style": {
+          "padding": "10px"
+        }
+      },
+      {
+        "selectors": [
+          "#ilwgvg"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ilwgvg"
+        ],
+        "style": {
+          "width": "90%"
+        }
+      },
+      {
+        "selectors": [
+          "#i82cj4"
+        ],
+        "style": {
+          "padding": "10px",
+          "color": "#229dff",
+          "font-size": "25px"
+        }
+      },
+      {
+        "selectors": [
+          "#i82cj4"
+        ],
+        "style": {
+          "font-size": "25px",
+          "color": "#229dff",
+          "font-weight": "700"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ipoinl"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#i95tzh"
+        ],
+        "style": {
+          "border-color": "rgb(34, 157, 255)",
+          "--tw-border-spacing-x": "0",
+          "--tw-border-spacing-y": "0",
+          "--tw-translate-x": "0",
+          "--tw-translate-y": "0",
+          "--tw-rotate": "0",
+          "--tw-skew-x": "0",
+          "--tw-skew-y": "0",
+          "--tw-scale-x": "1",
+          "--tw-scale-y": "1",
+          "--tw-scroll-snap-strictness": "proximity",
+          "--tw-ring-offset-width": "0px",
+          "--tw-ring-offset-color": "#fff",
+          "--tw-ring-color": "rgba(59, 130, 246, 0.5)",
+          "--tw-ring-offset-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-ring-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow": "0 0 rgba(0, 0, 0, 0)",
+          "--tw-shadow-colored": "0 0 rgba(0, 0, 0, 0)",
+          "scroll-behavior": "smooth",
+          "padding-bottom": "23px",
+          "font-size": "25px",
+          "line-height": "40px",
+          "font-family": "proxima-nova, sans-serif"
+        }
+      },
+      {
+        "selectors": [
+          "#iq1rcn"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#ic01ae"
+        ],
+        "style": {
+          "padding": "10px"
+        }
+      },
+      {
+        "selectors": [
+          "#ijrd77"
+        ],
+        "style": {
+          "height": "auto"
+        },
+        "mediaText": "(max-width: 480px)",
+        "atRuleType": "media"
+      },
+      {
+        "selectors": [
+          "#ijrd77"
+        ],
+        "style": {
+          "width": "90%"
+        }
+      },
+      {
+        "selectors": [
+          "#ixrexa"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#isslu7"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#imr05l"
+        ],
+        "style": {
+          "font-family": "proxima-nova, sans-serif",
+          "font-size": "18px"
+        }
+      },
+      {
+        "selectors": [
+          "#i47fqz"
+        ],
+        "style": {
+          "margin": "100px 0 0 0",
+          "width": "100%"
+        }
+      },
+      {
+        "selectors": [
+          "#iqoghh"
+        ],
+        "style": {
+          "width": "90%"
+        }
+      }
+    ],
+    "pages": [
+      {
+        "frames": [
+          {
+            "component": {
+              "type": "wrapper",
+              "stylable": [
+                "background",
+                "background-color",
+                "background-image",
+                "background-repeat",
+                "background-attachment",
+                "background-position",
+                "background-size"
+              ],
+              "attributes": {
+                "id": "ilb1"
+              },
+              "components": [
+                {
+                  "type": "text",
+                  "attributes": {
+                    "id": "iw36"
+                  },
+                  "components": [
+                    {
+                      "tagName": "span",
+                      "type": "text",
+                      "attributes": {
+                        "id": "i16n"
+                      },
+                      "components": [
+                        {
+                          "type": "textnode",
+                          "content": "Family Owned, Multiple Locations, And A Commitment To Helping You Get The Job Done Since 1946."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "attributes": {
+                    "id": "ikc8b"
+                  },
+                  "components": [
+                    {
+                      "type": "textnode",
+                      "content": "That's the Lano diffrence"
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": {
+                      "$numberInt": "0"
+                    },
+                    "tc": {
+                      "$numberInt": "0"
+                    },
+                    "tr": {
+                      "$numberInt": "0"
+                    },
+                    "cl": {
+                      "$numberInt": "0"
+                    },
+                    "cr": {
+                      "$numberInt": "0"
+                    },
+                    "bl": {
+                      "$numberInt": "0"
+                    },
+                    "br": {
+                      "$numberInt": "0"
+                    },
+                    "minDim": {
+                      "$numberInt": "1"
+                    }
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "iqp0s"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": {
+                          "$numberInt": "0"
+                        },
+                        "tc": {
+                          "$numberInt": "0"
+                        },
+                        "tr": {
+                          "$numberInt": "0"
+                        },
+                        "cl": {
+                          "$numberInt": "0"
+                        },
+                        "cr": {
+                          "$numberInt": "1"
+                        },
+                        "bl": {
+                          "$numberInt": "0"
+                        },
+                        "br": {
+                          "$numberInt": "0"
+                        },
+                        "minDim": {
+                          "$numberInt": "1"
+                        },
+                        "bc": {
+                          "$numberInt": "0"
+                        },
+                        "currentUnit": {
+                          "$numberInt": "1"
+                        },
+                        "step": {
+                          "$numberDouble": "0.2"
+                        }
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "if66i"
+                      },
+                      "components": [
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": {
+                              "$numberInt": "0"
+                            },
+                            "tc": {
+                              "$numberInt": "0"
+                            },
+                            "tr": {
+                              "$numberInt": "0"
+                            },
+                            "cl": {
+                              "$numberInt": "0"
+                            },
+                            "cr": {
+                              "$numberInt": "0"
+                            },
+                            "bl": {
+                              "$numberInt": "0"
+                            },
+                            "br": {
+                              "$numberInt": "0"
+                            },
+                            "minDim": {
+                              "$numberInt": "1"
+                            }
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "iz3o6"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": {
+                                  "$numberInt": "0"
+                                },
+                                "tc": {
+                                  "$numberInt": "0"
+                                },
+                                "tr": {
+                                  "$numberInt": "0"
+                                },
+                                "cl": {
+                                  "$numberInt": "0"
+                                },
+                                "cr": {
+                                  "$numberInt": "1"
+                                },
+                                "bl": {
+                                  "$numberInt": "0"
+                                },
+                                "br": {
+                                  "$numberInt": "0"
+                                },
+                                "minDim": {
+                                  "$numberInt": "1"
+                                },
+                                "bc": {
+                                  "$numberInt": "0"
+                                },
+                                "currentUnit": {
+                                  "$numberInt": "1"
+                                },
+                                "step": {
+                                  "$numberDouble": "0.2"
+                                }
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "i3zyh"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i4qs2"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "text-[18px]",
+                                        "sm:text-[24px]",
+                                        "lg:text-[42px]",
+                                        "font-bold",
+                                        "leading-[23px]",
+                                        "sm:leading-[36px]",
+                                        "lg:leading-[52px]",
+                                        "mb-[19px]",
+                                        "sm:mb-[21px]",
+                                        "lg:mb-[24px]"
+                                      ],
+                                      "attributes": {
+                                        "id": "Headline"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Top"
+                                        },
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i3zulc"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": " Brands"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "classes": [
+                                        "text-descrition"
+                                      ],
+                                      "attributes": {
+                                        "id": "ira2c"
+                                      },
+                                      "components": [
+                                        {
+                                          "classes": [
+                                            "text-[13px]",
+                                            "sm:text-[17px]",
+                                            "lg:text-[20px]",
+                                            "leading-[14px]",
+                                            "sm:leading-[21px]",
+                                            "lg:leading-[30px]",
+                                            "font-normal"
+                                          ],
+                                          "attributes": {
+                                            "id": "Description-2"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "isk8ks"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "We're proud to represent "
+                                    },
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "ia12by"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Bobcat, Kubota, Sany, Develon, Toro, Steiner, Stihl, Felling, Load Trail, EBY, Virnig"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "textnode",
+                                      "content": " , and other significant lines of attachments for skid steers, compact tractors and excavators. We partner with manufactures who offer cutting edge technology, and most importantly, attractive promotions to make these capital purchases more affordable."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": {
+                                  "$numberInt": "0"
+                                },
+                                "tc": {
+                                  "$numberInt": "0"
+                                },
+                                "tr": {
+                                  "$numberInt": "0"
+                                },
+                                "cl": {
+                                  "$numberInt": "0"
+                                },
+                                "cr": {
+                                  "$numberInt": "1"
+                                },
+                                "bl": {
+                                  "$numberInt": "0"
+                                },
+                                "br": {
+                                  "$numberInt": "0"
+                                },
+                                "minDim": {
+                                  "$numberInt": "1"
+                                },
+                                "bc": {
+                                  "$numberInt": "0"
+                                },
+                                "currentUnit": {
+                                  "$numberInt": "1"
+                                },
+                                "step": {
+                                  "$numberDouble": "0.2"
+                                }
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "iedp2"
+                              },
+                              "components": [
+                                {
+                                  "type": "image",
+                                  "resizable": {
+                                    "ratioDefault": {
+                                      "$numberInt": "1"
+                                    }
+                                  },
+                                  "attributes": {
+                                    "id": "i9ffa",
+                                    "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/top-brands-logs13bd631a-03fb-452f-98e5-53c607f9fe4c.png"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "i5ubcr"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ip910f"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "section",
+                                  "classes": [
+                                    "bdg-sect"
+                                  ],
+                                  "attributes": {
+                                    "id": "i8cieg"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "h1",
+                                      "type": "text",
+                                      "classes": [
+                                        "heading"
+                                      ],
+                                      "attributes": {
+                                        "id": "iylqv2"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i9wk4h"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Top Sales Pros"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tagName": "p",
+                                      "type": "text",
+                                      "classes": [
+                                        "paragraph"
+                                      ],
+                                      "attributes": {
+                                        "id": "i0o4yl"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "ibu5d9"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "From Loretto to Anoka to Shakopee, our experienced staff are acknowledgeable about all aspects of construction and heavy equipment."
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "i56vdg"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "section",
+                                  "classes": [
+                                    "bdg-sect"
+                                  ],
+                                  "attributes": {
+                                    "id": "io5s3d"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "h1",
+                                      "type": "text",
+                                      "classes": [
+                                        "heading"
+                                      ],
+                                      "attributes": {
+                                        "id": "ip5eae"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "icwb3l"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Competitive Pricing"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tagName": "p",
+                                      "type": "text",
+                                      "classes": [
+                                        "paragraph"
+                                      ],
+                                      "attributes": {
+                                        "id": "ia0nx4"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "incuzu"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "For new or used equipment for construction or agriculture, you can always count on Lano for prices that will complete with any dealership, anywhere, anytime."
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "irj2xe"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "section",
+                                  "classes": [
+                                    "bdg-sect"
+                                  ],
+                                  "attributes": {
+                                    "id": "i9u56m"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "h1",
+                                      "type": "text",
+                                      "classes": [
+                                        "heading"
+                                      ],
+                                      "attributes": {
+                                        "id": "iyqarj"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i4y6qx"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Huge Used Inventory"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tagName": "p",
+                                      "type": "text",
+                                      "classes": [
+                                        "paragraph"
+                                      ],
+                                      "attributes": {
+                                        "id": "ixlzst"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "span",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i3jp27"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Skid steers, excavators, track loaders, attachments, compact tractors, and more. You name it, We carry it. We consistently inventory over 300 pieces of used equipment at all times.  "
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "attributes": {
+                            "id": "itwzc"
+                          },
+                          "components": [
+                            {
+                              "type": "textnode",
+                              "content": "HISTORY"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "attributes": {
+                    "id": "iuo3l"
+                  },
+                  "components": [
+                    {
+                      "type": "textnode",
+                      "content": "Lano Equipment, Inc, is a second-generation, family-owned and operated equipment dealership established by four brothers just out of the military service in 1946."
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "isjhty"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "idhdtk"
+                      },
+                      "components": [
+                        {
+                          "type": "image",
+                          "resizable": {
+                            "ratioDefault": 1
+                          },
+                          "attributes": {
+                            "id": "if8nbf",
+                            "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-01.jpg"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "iejiog"
+                      },
+                      "components": [
+                        {
+                          "tagName": "span",
+                          "type": "text",
+                          "attributes": {
+                            "id": "i1c0fh"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "attributes": {
+                            "id": "ixapsp"
+                          },
+                          "components": [
+                            {
+                              "tagName": "span",
+                              "type": "text",
+                              "attributes": {
+                                "id": "iohqtq"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "The firm’s original location was on First Street in Chaska, MN. In 1978, Lano Equipment, Inc. moved to a new 16,000 square foot, six-acre facility in Shakopee, MN. In 1991, Lano Equipment, Inc expanded into the north metro area with a new 18,000 square foot facility."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "iz7u56"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "i59ghy"
+                      },
+                      "components": [
+                        {
+                          "type": "image",
+                          "resizable": {
+                            "ratioDefault": 1
+                          },
+                          "attributes": {
+                            "id": "i5z5de",
+                            "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-02.jpg"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "ivxv5b"
+                      },
+                      "components": [
+                        {
+                          "type": "text",
+                          "attributes": {
+                            "id": "ibpdr9"
+                          },
+                          "components": [
+                            {
+                              "tagName": "span",
+                              "type": "text",
+                              "attributes": {
+                                "id": "ita5vv"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "As the case with many distributors, Lano Equipment, Inc. had its roots in agriculture, but has since grown into one of the largest light industrial equipment distributorships in the Twin Cities metropolitan area. Gerhard (Hauser), Joe, Dick, and Clarence Lano are the brothers who made up the first generation of the company. Joe Jr., Roger, Gary, Rod, Brad, and Kurt, represent members of the second Lano generation."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "itvacm"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "iqr1at"
+                      },
+                      "components": [
+                        {
+                          "type": "image",
+                          "resizable": {
+                            "ratioDefault": 1
+                          },
+                          "attributes": {
+                            "id": "i4be4f",
+                            "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/history-banner-03.jpg"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "iwv0ot"
+                      },
+                      "components": [
+                        {
+                          "type": "text",
+                          "attributes": {
+                            "id": "ius7xd"
+                          },
+                          "components": [
+                            {
+                              "tagName": "span",
+                              "type": "text",
+                              "attributes": {
+                                "id": "io2ck5"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Lano Equipment, Inc. currently lists 62 employees on its payroll between three stores. In addition to Bobcat, the firm represents Kubota, Develon, Toro, Sany, Stihl, Felling Trailers, Load Trail, EBY Trailers, and other significant lines of attachments."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "irq8kq"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "i3ppsd"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "ihmbk"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "i28se"
+                      },
+                      "components": [
+                        {
+                          "tagName": "section",
+                          "classes": [
+                            "bdg-sect"
+                          ],
+                          "attributes": {
+                            "id": "i3rfn7"
+                          },
+                          "components": [
+                            {
+                              "tagName": "section",
+                              "classes": [
+                                "bdg-sect"
+                              ],
+                              "attributes": {
+                                "id": "i7765z"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h1",
+                                  "type": "text",
+                                  "classes": [
+                                    "heading"
+                                  ],
+                                  "attributes": {
+                                    "id": "i1ggnh"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "h1",
+                                      "type": "text",
+                                      "classes": [
+                                        "heading",
+                                        "gjs-selected"
+                                      ],
+                                      "attributes": {
+                                        "id": "ij8nxz-3",
+                                        "draggable": "false"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "The Lano Family (2nd & 3rd Generations) "
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tagName": "p",
+                                  "type": "text",
+                                  "classes": [
+                                    "paragraph"
+                                  ],
+                                  "attributes": {
+                                    "id": "ipixpf"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "icd3j1"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Since 1946, Lano Equipment has been providing the best customer service with the most knowledgable sales staff in the Midwest."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Row",
+                              "droppable": ".gjs-cell",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 0,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-row",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "i08l95"
+                              },
+                              "components": [
+                                {
+                                  "name": "Cell",
+                                  "draggable": ".gjs-row",
+                                  "resizable": {
+                                    "tl": 0,
+                                    "tc": 0,
+                                    "tr": 0,
+                                    "cl": 0,
+                                    "cr": 1,
+                                    "bl": 0,
+                                    "br": 0,
+                                    "minDim": 1,
+                                    "bc": 0,
+                                    "currentUnit": 1,
+                                    "step": 0.2
+                                  },
+                                  "classes": [
+                                    {
+                                      "name": "gjs-cell",
+                                      "private": 1
+                                    }
+                                  ],
+                                  "attributes": {
+                                    "id": "i605ke"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "image",
+                                      "resizable": {
+                                        "ratioDefault": 1
+                                      },
+                                      "attributes": {
+                                        "id": "i1kw91",
+                                        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-gary-lano.png"
+                                      }
+                                    },
+                                    {
+                                      "tagName": "h1",
+                                      "type": "text",
+                                      "classes": [
+                                        "heading"
+                                      ],
+                                      "attributes": {
+                                        "id": "ikxeaj"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Gary Lano"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "mb-[17px]",
+                                        "sm:mb-[19px]",
+                                        "lg:mb-[20px]",
+                                        "text-[13px]",
+                                        "sm:text-[17px]",
+                                        "lg:text-[18px]",
+                                        "leading-[14px]",
+                                        "sm:leading-[20px]",
+                                        "lg:leading-[28px]",
+                                        "font-normal"
+                                      ],
+                                      "attributes": {
+                                        "id": "SubHeadline1"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Vice President"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "i4g9f1"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i3ih1i"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Direct:"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": " 763-207-9821"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Office:"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": "  763-479-8200"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Email: "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "attributes": {
+                                            "id": "i3r49r"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Gary_La"
+                                            },
+                                            {
+                                              "tagName": "span",
+                                              "attributes": {
+                                                "id": "i9ed1d"
+                                              }
+                                            },
+                                            {
+                                              "type": "textnode",
+                                              "content": "no@lanoequip.com"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Cell",
+                                  "draggable": ".gjs-row",
+                                  "resizable": {
+                                    "tl": 0,
+                                    "tc": 0,
+                                    "tr": 0,
+                                    "cl": 0,
+                                    "cr": 1,
+                                    "bl": 0,
+                                    "br": 0,
+                                    "minDim": 1,
+                                    "bc": 0,
+                                    "currentUnit": 1,
+                                    "step": 0.2
+                                  },
+                                  "classes": [
+                                    {
+                                      "name": "gjs-cell",
+                                      "private": 1
+                                    }
+                                  ],
+                                  "attributes": {
+                                    "id": "icf7ph"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "image",
+                                      "resizable": {
+                                        "ratioDefault": 1
+                                      },
+                                      "attributes": {
+                                        "id": "it50r4",
+                                        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-kurt-lano.jpg"
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "text-[13px]",
+                                        "sm:text-[17px]",
+                                        "lg:text-[20px]",
+                                        "leading-[16px]",
+                                        "sm:leading-[23px]",
+                                        "lg:leading-[34px]",
+                                        "font-semibold"
+                                      ],
+                                      "attributes": {
+                                        "id": "Headline2-2"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Kurt Lano"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "mb-[17px]",
+                                        "sm:mb-[19px]",
+                                        "lg:mb-[20px]",
+                                        "text-[13px]",
+                                        "sm:text-[17px]",
+                                        "lg:text-[18px]",
+                                        "leading-[14px]",
+                                        "sm:leading-[20px]",
+                                        "lg:leading-[28px]",
+                                        "font-normal"
+                                      ],
+                                      "attributes": {
+                                        "id": "SubHeadline2"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Vice President"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "i0v5x6"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Cell:"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": " 612-282-8328"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Office:"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": " 952-445-6310"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Email: "
+                                            },
+                                            {
+                                              "tagName": "span",
+                                              "type": "text",
+                                              "attributes": {
+                                                "id": "i7n146"
+                                              },
+                                              "components": [
+                                                {
+                                                  "type": "textnode",
+                                                  "content": "KurtL@Lanoequip.com"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Cell",
+                                  "draggable": ".gjs-row",
+                                  "resizable": {
+                                    "tl": 0,
+                                    "tc": 0,
+                                    "tr": 0,
+                                    "cl": 0,
+                                    "cr": 1,
+                                    "bl": 0,
+                                    "br": 0,
+                                    "minDim": 1,
+                                    "bc": 0,
+                                    "currentUnit": 1,
+                                    "step": 0.2
+                                  },
+                                  "classes": [
+                                    {
+                                      "name": "gjs-cell",
+                                      "private": 1
+                                    }
+                                  ],
+                                  "attributes": {
+                                    "id": "ib2ezk"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "image",
+                                      "resizable": {
+                                        "ratioDefault": 1
+                                      },
+                                      "attributes": {
+                                        "id": "ijxq3f",
+                                        "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/team-roger-lano.png"
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "text-[13px]",
+                                        "sm:text-[17px]",
+                                        "lg:text-[20px]",
+                                        "leading-[16px]",
+                                        "sm:leading-[23px]",
+                                        "lg:leading-[34px]",
+                                        "font-semibold"
+                                      ],
+                                      "attributes": {
+                                        "id": "Headline3-2"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Roger Lano"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "classes": [
+                                        "mb-[17px]",
+                                        "sm:mb-[19px]",
+                                        "lg:mb-[20px]",
+                                        "text-[13px]",
+                                        "sm:text-[17px]",
+                                        "lg:text-[18px]",
+                                        "leading-[14px]",
+                                        "sm:leading-[20px]",
+                                        "lg:leading-[28px]",
+                                        "font-normal"
+                                      ],
+                                      "attributes": {
+                                        "id": "SubHeadline3"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Vice President"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "iu2ifv"
+                                      },
+                                      "components": [
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Direct:"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": " 952-658-7413"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Office: "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "textnode",
+                                          "content": "952-445-6310"
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        },
+                                        {
+                                          "tagName": "b",
+                                          "type": "text",
+                                          "components": [
+                                            {
+                                              "type": "textnode",
+                                              "content": "Email: "
+                                            },
+                                            {
+                                              "tagName": "span",
+                                              "type": "text",
+                                              "attributes": {
+                                                "id": "i67wp9"
+                                              },
+                                              "components": [
+                                                {
+                                                  "type": "textnode",
+                                                  "content": "RogerL@Lanoequip.com"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tagName": "br",
+                                          "void": true
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "attributes": {
+                    "id": "igtjck"
+                  },
+                  "components": [
+                    {
+                      "type": "textnode",
+                      "content": "Culture & Values"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "attributes": {
+                    "id": "i66ufq"
+                  },
+                  "components": [
+                    {
+                      "type": "textnode",
+                      "content": "Our values define how we serve our customers, work with partners and set expectation for our team."
+                    }
+                  ]
+                },
+                {
+                  "name": "Row",
+                  "droppable": ".gjs-cell",
+                  "resizable": {
+                    "tl": 0,
+                    "tc": 0,
+                    "tr": 0,
+                    "cl": 0,
+                    "cr": 0,
+                    "bl": 0,
+                    "br": 0,
+                    "minDim": 1
+                  },
+                  "classes": [
+                    {
+                      "name": "gjs-row",
+                      "private": 1
+                    }
+                  ],
+                  "attributes": {
+                    "id": "idz20f"
+                  },
+                  "components": [
+                    {
+                      "name": "Cell",
+                      "draggable": ".gjs-row",
+                      "resizable": {
+                        "tl": 0,
+                        "tc": 0,
+                        "tr": 0,
+                        "cl": 0,
+                        "cr": 1,
+                        "bl": 0,
+                        "br": 0,
+                        "minDim": 1,
+                        "bc": 0,
+                        "currentUnit": 1,
+                        "step": 0.2
+                      },
+                      "classes": [
+                        {
+                          "name": "gjs-cell",
+                          "private": 1
+                        }
+                      ],
+                      "attributes": {
+                        "id": "i0qvgb"
+                      },
+                      "components": [
+                        {
+                          "type": "image",
+                          "resizable": {
+                            "ratioDefault": 1
+                          },
+                          "attributes": {
+                            "id": "ir8238",
+                            "src": "https://redefinecommerce.blob.core.windows.net/lanomedia/1/store/5/images/culture-values.jpg"
+                          }
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "i47fqz"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "i2is6t"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i6lj0g"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "01."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "iqoghh"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "classes": [
+                                    "text-[19px]",
+                                    "sm:text-[22px]",
+                                    "lg:text-[25px]",
+                                    "leading-[18px]",
+                                    "sm:leading-[24px]",
+                                    "lg:leading-[40px]",
+                                    "font-bold",
+                                    "pb-[23px]",
+                                    "last:pb-0"
+                                  ],
+                                  "attributes": {
+                                    "id": "imifkg"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Partners, not traders"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tagName": "span",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "icfodm"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "We’re trusted, long-term partners for our industry. We value the needs of our customers and seek to understand their points of view when solving problems. We’re gracious and enthusiastic members of our community."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "i4kwjl"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "i9mv43"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ibcqlb"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "b",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "ins7kz"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "02."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "iun2ll"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "classes": [
+                                    "text-[19px]",
+                                    "sm:text-[22px]",
+                                    "lg:text-[25px]",
+                                    "leading-[18px]",
+                                    "sm:leading-[24px]",
+                                    "lg:leading-[40px]",
+                                    "font-bold",
+                                    "pb-[23px]",
+                                    "last:pb-0"
+                                  ],
+                                  "attributes": {
+                                    "id": "il22ay"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Get in the cab"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ikxh01"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "irvyvg"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "We’re responsible for our outcomes. When the need arises, we’re never afraid to get in the cab and own it. Our team members push hard to make sure we get excellent customer and business results."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "i4xie8"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ic09i8"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "iu6smp"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "b",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "izar8i"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "03."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ilwgvg"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "classes": [
+                                    "text-[19px]",
+                                    "sm:text-[22px]",
+                                    "lg:text-[25px]",
+                                    "leading-[18px]",
+                                    "sm:leading-[24px]",
+                                    "lg:leading-[40px]",
+                                    "font-bold",
+                                    "pb-[23px]",
+                                    "last:pb-0"
+                                  ],
+                                  "attributes": {
+                                    "id": "ivf1xf"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Get your hands dirty "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "io1mj6"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "ixrexa"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "There are no shortcuts when building relationships, technology, and a business. We know that the path to success includes challenges — we embrace those challenges and learn from them."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "ilchy4"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "izof57"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i5ugd6"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "b",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "ijrxrk"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "04."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ids81i"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "classes": [
+                                    "text-[19px]",
+                                    "sm:text-[22px]",
+                                    "lg:text-[25px]",
+                                    "leading-[18px]",
+                                    "sm:leading-[24px]",
+                                    "lg:leading-[40px]",
+                                    "font-bold",
+                                    "pb-[23px]",
+                                    "last:pb-0"
+                                  ],
+                                  "attributes": {
+                                    "id": "i5vo4m"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Build bigger"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i1witg"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "isslu7"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "We look for 10X not 10%. We push the status quo of the industry to deliver more value for our customers, investors and team members."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Row",
+                          "droppable": ".gjs-cell",
+                          "resizable": {
+                            "tl": 0,
+                            "tc": 0,
+                            "tr": 0,
+                            "cl": 0,
+                            "cr": 0,
+                            "bl": 0,
+                            "br": 0,
+                            "minDim": 1
+                          },
+                          "classes": [
+                            {
+                              "name": "gjs-row",
+                              "private": 1
+                            }
+                          ],
+                          "attributes": {
+                            "id": "ioczdi"
+                          },
+                          "components": [
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ipoinl"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i82cj4"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "b",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "ijyzt7"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "05."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Cell",
+                              "draggable": ".gjs-row",
+                              "resizable": {
+                                "tl": 0,
+                                "tc": 0,
+                                "tr": 0,
+                                "cl": 0,
+                                "cr": 1,
+                                "bl": 0,
+                                "br": 0,
+                                "minDim": 1,
+                                "bc": 0,
+                                "currentUnit": 1,
+                                "step": 0.2
+                              },
+                              "classes": [
+                                {
+                                  "name": "gjs-cell",
+                                  "private": 1
+                                }
+                              ],
+                              "attributes": {
+                                "id": "ijrd77"
+                              },
+                              "components": [
+                                {
+                                  "type": "text",
+                                  "classes": [
+                                    "text-[19px]",
+                                    "sm:text-[22px]",
+                                    "lg:text-[25px]",
+                                    "leading-[18px]",
+                                    "sm:leading-[24px]",
+                                    "lg:leading-[40px]",
+                                    "font-bold",
+                                    "pb-[23px]",
+                                    "last:pb-0"
+                                  ],
+                                  "attributes": {
+                                    "id": "i95tzh"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Be you"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ic01ae"
+                                  },
+                                  "components": [
+                                    {
+                                      "tagName": "span",
+                                      "type": "text",
+                                      "attributes": {
+                                        "id": "imr05l"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Our team embrace their authentic selves and leverage their unique backgrounds to help all of us achieve greatness. We strive to be the best version of ourselves and we make space for others to do the same."
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "head": {
+                "type": "head"
+              },
+              "docEl": {
+                "tagName": "html"
+              }
+            },
+            "id": "nzsGhg5FPQGpM0lX"
+          }
+        ],
+        "type": "main",
+        "id": "R0SOHqv7FAtLYQUe"
+      }
+    ],
+    "symbols": [],
+    "dataSources": []
+  }
+}

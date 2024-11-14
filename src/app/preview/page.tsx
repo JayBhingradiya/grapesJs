@@ -1,48 +1,124 @@
 "use client";
 import ImageSlider from "@/components/customImageSlider/sliderComponents";
-import FeaturedCategory from "@/components/featuredCategory/featuredCategory";
+import SrollableLogos from "@/components/scrollableLogos/scrollableLogos";
 import React, { useEffect, useState } from "react";
 
-interface DataStructure {
-  components: any[];
-}
+const renderComponent = (component: any, index: number) => {
+  if (component.type === "textnode") {
+    return component.content;
+  }
 
-const Preview = () => {
-  const [data, setData] = useState<DataStructure | null>(null);
+  const { tagName, type, components, attributes, classes } = component;
+  const Tag = tagName || "div";
+  const elementProps = {
+    className: classes?.map((cls: any) => cls.name).join(" "),
+    ...attributes,
+  };
+
+  if (type === "image") {
+    return (
+      <img
+        key={index}
+        id={attributes?.id}
+        src={attributes?.src}
+        alt={attributes?.alt || "image"}
+        className={classes?.map((cls: any) => cls.name).join(" ")}
+      />
+    );
+  }
+
+  if (type === "button") {
+    return (
+      <button key={index} {...attributes} disabled>
+        {components && components.map(renderComponent)}
+      </button>
+    );
+  }
+
+  if (type === "link") {
+    return (
+      <a key={index} href={attributes?.href || "#"} {...attributes}>
+        {components && components.map(renderComponent)}
+      </a>
+    );
+  }
+
+  return (
+    <Tag key={index} {...elementProps}>
+      {components &&
+        components.map((child: any, idx: number) =>
+          renderComponent(child, idx)
+        )}
+    </Tag>
+  );
+};
+
+const Preview = ({ pageId }: { pageId: string }) => {
+  const [finalData, setFinalData] = useState<any>([]);
+  const [stylesData, setStylesData] = useState<[]>([]);
 
   useEffect(() => {
-    const getJsonData = async () => {
-      const jsonData = await fetch("/grapesJsData.json");
-      const finalData = await jsonData.json();
-      setData(finalData);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `/api/loadGrapesData?id=${pageId || "grapesjs"}`
+        );
+        const data = await response.json();
+        setFinalData(data.data.data.pages[0].frames[0].component.components);
+        setStylesData(data.data.data.styles);
+      } catch (error) {
+        console.error("Error loading component data:", error);
+      }
     };
-    getJsonData();
+
+    fetchData();
   }, []);
+
+  useEffect(() => {
+    if (stylesData) {
+      const styleTag = document.createElement("style");
+      styleTag.textContent = stylesData
+        .map((style: any) => {
+          const cssString = Object.entries(style.style)
+            .map(([key, value]) => `${key}: ${value};`)
+            .join(" ");
+
+          const selector = style.selectors[0].name
+            ? `.${style.selectors[0].name}`
+            : `${style.selectors}`;
+
+          if (style.mediaText) {
+            return `@media ${style.mediaText} { ${selector} {${cssString}}}`;
+          } else if (style.state === "hover") {
+            return `${selector}:hover {${cssString}}`;
+          } else {
+            return `${selector} {${cssString}}`;
+          }
+        })
+        .join(" ");
+      document.head.appendChild(styleTag);
+
+      return () => {
+        document.head.removeChild(styleTag);
+      };
+    }
+  }, [stylesData]);
+
+  console.log("stylesData", stylesData);
   return (
-    <section id="allContents">
-      {data?.components?.map((item, index) => {
+    <div>
+      {finalData.map((item: any, index: number) => {
         if (item.type === "custom-slider") {
-          return <ImageSlider key={index} slides={item?.attributes?.slides} />;
-        } else if (item.type === "dynamic-products") {
+          return <ImageSlider slides={item.attributes?.slides} key={index} />;
+        } else if (item.type === "Slider-logos") {
           return (
-            <FeaturedCategory
-              key={index}
-              serverSideData={item?.attributes?.serverSideData}
-            />
+            <SrollableLogos slides={item.attributes?.logoSlides} key={index} />
           );
         } else {
-          return (
-            <>
-              <style>{item.css}</style>
-              <div
-                key={index}
-                dangerouslySetInnerHTML={{ __html: item.html }}
-              />
-            </>
-          );
+          return <div key={index}>{renderComponent(item, index)}</div>;
         }
       })}
-    </section>
+    </div>
   );
 };
 

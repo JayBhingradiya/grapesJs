@@ -14,20 +14,24 @@ import AddSaveDataPanel from "./panel/saveData";
 import GsSlider from "@/components/customImageSlider/gsSlider";
 import GsFeaturedCategory from "@/components/featuredCategory/gsFeaturedCategory";
 import GsLogosSlider from "@/components/scrollableLogos/gsSlider";
+import { usePathname } from "next/navigation";
 
 interface grapejsEditorProps {
-  serverSideData: serversideDataProps[];
+  serverSideData?: serversideDataProps[];
+  projectID?: string;
 }
 const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
+  const params = usePathname();
+  const pageId = params.split("").slice(1).join("") || "grapesjs";
+
   const editorRef = useRef<Editor | null>(null);
 
   // const loadEndpoint = "api/loadData";
-  // const saveEndpoint = "api/saveData";
-
-  const loadEndpoint = "/api/loadGrapesData";
+  // // const saveEndpoint = "api/saveData";
+  // //
+  // const projectID = "bobcat";
+  const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
-
-  const projectID = "grapesjs";
 
   useEffect(() => {
     editorRef.current = grapesjs.init({
@@ -56,7 +60,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
             //   return { id: projectID, data };
             // },
             // onLoad: (result) => {
-            //   console.log("data", result);
+            //   console.log("data", result.data);
             //   return result.data.data || {};
             // },
 
@@ -64,10 +68,11 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
             urlLoad: loadEndpoint,
             urlStore: saveEndpoint,
             onStore: (data) => {
-              return { id: projectID, data };
+              return { id: pageId, data };
             },
             onLoad: (result) => {
-              return result.data[0].data || {};
+              console.log("result", result);
+              return result.data.data || {};
             },
           },
         },
@@ -86,10 +91,10 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     AddSaveDataPanel(editorRef.current);
 
     // Add custom component
-    GsListing(editorRef.current, serverSideData);
-    GsSlider(editorRef.current);
+    GsListing(editorRef.current, serverSideData || []);
+    GsSlider(editorRef.current, pageId);
     GsFeaturedCategory(editorRef.current, serverSideData);
-    GsLogosSlider(editorRef.current);
+    GsLogosSlider(editorRef.current, pageId);
   }, [serverSideData]);
 
   return (

@@ -28,12 +28,6 @@ const Home = () => {
     fetchData();
   }, []);
 
-  // const serverSideData: serversideDataProps[] = [
-  //   { id: 1, name: "Denish" },
-  //   { id: 2, name: "Dortha" },
-  //   { id: 3, name: "Venom" },
-  //   { id: 4, name: "Devid" },
-  // ];
   return <GrapeJsEditor serverSideData={serverData} />;
 };
 export default Home;

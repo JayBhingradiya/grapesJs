@@ -1,8 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import { Grid, Navigation, Pagination } from "swiper/modules";
-
 import { SwiperSlide, Swiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/grid";
 
 interface scrollableLogo {
   slides: any[];

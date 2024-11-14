@@ -32,6 +32,7 @@ export const handleImageAltTagChangeHandler = (
   );
   updateSlides(model, updatedSlides);
 };
+
 export const handleImageLinkChangeHandler = (
   model: any,
   value: string,

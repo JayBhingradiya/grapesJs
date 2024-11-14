@@ -1,11 +1,13 @@
 import { connectToDatabase } from "@/utils/mongoDb";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
     const { db } = await connectToDatabase();
-    const data = await db.collection("grapesjs_data").find({}).toArray();
-    if (data.length > 0) {
+    const id = req.nextUrl.searchParams.get("id");
+    const data = await db.collection("grapesjs_data").findOne({ id });
+
+    if (data) {
       return NextResponse.json(
         { message: "Data retrieved successfully", data },
         { status: 200 }

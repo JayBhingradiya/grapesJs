@@ -23,7 +23,7 @@ export interface Slide {
   mediaType: string;
 }
 
-const GsSlider = (editor: Editor) => {
+const GsSlider = (editor: Editor, pageId: string) => {
   const defaultSlides: Slide[] = [
     {
       image:
@@ -62,7 +62,7 @@ const GsSlider = (editor: Editor) => {
       init() {
         const attributes = this.get("attributes");
         const componentId = attributes ? attributes.id : "";
-        fetch("api/loadData")
+        fetch(`api/loadGrapesData?id=${pageId}`)
           .then((res) => res.json())
           .then((response) => {
             const component = response.data.data.pages[0].frames?.map(
