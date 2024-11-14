@@ -26,10 +26,6 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
-  // const loadEndpoint = "api/loadData";
-  // // const saveEndpoint = "api/saveData";
-  // //
-  // const projectID = "bobcat";
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
@@ -52,19 +48,6 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         options: {
           remote: {
             contentTypeJson: true,
-            // For json file
-            // urlLoad: loadEndpoint,
-            // urlStore: saveEndpoint,
-            // onStore: (data) => {
-            //   console.log("datadatadatadata", data);
-            //   return { id: projectID, data };
-            // },
-            // onLoad: (result) => {
-            //   console.log("data", result.data);
-            //   return result.data.data || {};
-            // },
-
-            // From Db
             urlLoad: loadEndpoint,
             urlStore: saveEndpoint,
             onStore: (data) => {
