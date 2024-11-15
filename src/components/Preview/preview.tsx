@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ImageSlider from "@/components/customImageSlider/sliderComponents";
 import SrollableLogos from "@/components/scrollableLogos/scrollableLogos";
+import FeaturedCategory from "../featuredCategory/featuredCategory";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -112,6 +113,14 @@ const Preview = ({ pageId }: { pageId: string }) => {
         } else if (item.type === "Slider-logos") {
           return (
             <SrollableLogos slides={item.attributes?.logoSlides} key={index} />
+          );
+        } else if (item.type === "dynamic-products") {
+          console.log("if");
+          return (
+            <FeaturedCategory
+              key={index}
+              serverSideData={item?.attributes?.serverSideData}
+            />
           );
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
