@@ -54,7 +54,6 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
               return { id: pageId, data };
             },
             onLoad: (result) => {
-              console.log("result", result);
               return result.data.data || {};
             },
           },

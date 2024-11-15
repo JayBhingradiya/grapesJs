@@ -11,8 +11,18 @@ const renderComponent = (component: any, index: number) => {
 
   const { tagName, type, components, attributes, classes } = component;
   const Tag = tagName || "div";
+
+  const classNameValue = Array.isArray(classes)
+    ? classes
+        .map((cls: any) => (typeof cls === "string" ? cls : cls.name || ""))
+        .filter(Boolean)
+        .join(" ")
+    : typeof classes === "object" && classes.className
+    ? classes.className
+    : "";
+
   const elementProps = {
-    className: classes?.map((cls: any) => cls.name).join(" "),
+    className: classNameValue,
     ...attributes,
   };
 
@@ -57,12 +67,13 @@ const renderComponent = (component: any, index: number) => {
 const Preview = ({ pageId }: { pageId: string }) => {
   const [finalData, setFinalData] = useState<any>([]);
   const [stylesData, setStylesData] = useState<[]>([]);
+  console.log("stylesData", stylesData);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/loadGrapesData?id=${pageId || "grapesjs"}`
+          `/api/loadData?id=${pageId || "grapesjs"}`
         );
         const data = await response.json();
         setFinalData(data.data.data.pages[0].frames[0].component.components);

@@ -15,7 +15,6 @@ const Home = () => {
         method: "GET",
         url: "https://lanofrontapi.lanoequip.com/StoreDeals/getstoredealsbystoreid/5.json",
       });
-      console.log("dataaaaa", data);
       setServerData(data?.data?.data);
     };
     fetchData();
