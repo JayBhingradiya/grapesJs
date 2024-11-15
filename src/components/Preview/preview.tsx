@@ -67,13 +67,12 @@ const renderComponent = (component: any, index: number) => {
 const Preview = ({ pageId }: { pageId: string }) => {
   const [finalData, setFinalData] = useState<any>([]);
   const [stylesData, setStylesData] = useState<[]>([]);
-  console.log("stylesData", stylesData);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/loadData?id=${pageId || "grapesjs"}`
+          `/api/loadGrapesData?id=${pageId || "grapesjs"}`
         );
         const data = await response.json();
         setFinalData(data.data.data.pages[0].frames[0].component.components);
