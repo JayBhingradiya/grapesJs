@@ -6,8 +6,8 @@ const GsFeaturedCategory = (editor: Editor, serverSideData: any) => {
   const filteredData = serverSideData?.slice(0, 4)?.map((item: any) => ({
     id: item.id,
     seName: item.seName,
-    image: item.image,
-    name: item.name,
+    image: item.imagePath,
+    name: item.title,
   }));
 
   editor.Components.addType("dynamic-products", {

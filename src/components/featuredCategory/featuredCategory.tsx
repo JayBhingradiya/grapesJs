@@ -13,7 +13,11 @@ const FeaturedCategory = ({ serverSideData }: FeaturedCategoryProps) => {
             <div className="flex flex-col border border-gray-500 overflow-hidden">
               <div>
                 <img
-                  src={`https://www.anniesannuals.com/cdn-cgi/image/width=370/https://storage.anniesannuals.com//${data?.image}`}
+                  className="object-contain"
+                  style={{
+                    minHeight: "330px",
+                  }}
+                  src={`https://storagemedia.lanoequip.com/${data?.image}`}
                 />
               </div>
               <Link href={`https://www.anniesannuals.com/${data.seName}.html`}>

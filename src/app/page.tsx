@@ -12,17 +12,10 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await axios({
-        method: "post",
-        url: "https://frontapi.anniesannuals.com/StoreProduct/getshopbytype.json",
-        data: {
-          storeID: 5,
-          countforfetchitems: 0,
-          shopByGarden: false,
-          shopByCategories: true,
-          shopByFeatures: false,
-          shopByUses: false,
-        },
+        method: "GET",
+        url: "https://lanofrontapi.lanoequip.com/StoreDeals/getstoredealsbystoreid/5.json",
       });
+      console.log("dataaaaa", data);
       setServerData(data?.data?.data);
     };
     fetchData();
