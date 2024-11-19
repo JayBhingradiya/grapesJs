@@ -47,7 +47,7 @@ const ImageSlider = ({ slides }: ImageSlidesProps) => {
                       alt="Placeholder"
                     />
                   )}
-                  <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div
                       className="font-bold text-lg"
                       style={{ color: item.textColor }}
