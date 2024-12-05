@@ -15,6 +15,7 @@ import GsSlider from "@/components/customImageSlider/gsSlider";
 import GsFeaturedCategory from "@/components/featuredCategory/gsFeaturedCategory";
 import GsLogosSlider from "@/components/scrollableLogos/gsSlider";
 import { usePathname } from "next/navigation";
+import { styleManagerConfig } from "./styleManagerConfig";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -42,6 +43,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         },
       },
       selectorManager: { componentFirst: true },
+      styleManager: styleManagerConfig,
       storageManager: {
         type: "remote",
         autoload: true,
