@@ -12,10 +12,23 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await axios({
-        method: "GET",
-        url: "https://lanofrontapi.lanoequip.com/StoreDeals/getstoredealsbystoreid/5.json",
+        method: "POST",
+        url: "https://front-staging.parsonskellogg.services/CmsComponents/getpagecomponents.json",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        data: {
+          pageId: 295,
+          type: "Topic",
+        },
       });
-      setServerData(data?.data?.data);
+      const featureProductData = data?.data?.data?.find(
+        (comp: any) => comp.name === "Featured Products"
+      );
+
+      if (featureProductData) {
+        setServerData(JSON.parse(featureProductData.selectedVal));
+      }
     };
     fetchData();
   }, []);

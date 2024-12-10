@@ -16,6 +16,7 @@ import GsFeaturedCategory from "@/components/featuredCategory/gsFeaturedCategory
 import GsLogosSlider from "@/components/scrollableLogos/gsSlider";
 import { usePathname } from "next/navigation";
 import { styleManagerConfig } from "./styleManagerConfig";
+import GsBrAlphabet from "@/components/br_alphabet/gs_brAlphabet";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -27,9 +28,13 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
+  // const loadEndpoint = "api/loadData";
+  // const saveEndpoint = "api/saveData";
+
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
+  // const projectID = "alphabet-brand";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -49,6 +54,19 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         autoload: true,
         options: {
           remote: {
+            // Json
+            // urlLoad: loadEndpoint,
+            // urlStore: saveEndpoint,
+            // onStore: (data) => {
+            //   console.log("datadatadatadata", data);
+            //   return { id: projectID, data };
+            // },
+            // onLoad: (result) => {
+            //   console.log("data", result.data);
+            //   return result.data.data || {};
+            // },
+
+            // For DB
             contentTypeJson: true,
             urlLoad: loadEndpoint,
             urlStore: saveEndpoint,
@@ -65,8 +83,8 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
       },
       canvas: {
         styles: [
-          "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
           "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",
+          "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
         ],
       },
     });
@@ -77,8 +95,9 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     // Add custom component
     GsListing(editorRef.current, serverSideData || []);
     GsSlider(editorRef.current, pageId);
-    GsFeaturedCategory(editorRef.current, serverSideData);
+    GsFeaturedCategory(editorRef.current, serverSideData || []);
     GsLogosSlider(editorRef.current, pageId);
+    GsBrAlphabet(editorRef.current);
   }, [serverSideData]);
 
   return (

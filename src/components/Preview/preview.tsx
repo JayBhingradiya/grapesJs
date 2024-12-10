@@ -125,7 +125,6 @@ const Preview = ({ pageId }: { pageId: string }) => {
             <SrollableLogos slides={item.attributes?.logoSlides} key={index} />
           );
         } else if (item.type === "dynamic-products") {
-          console.log("if");
           return (
             <FeaturedCategory
               key={index}

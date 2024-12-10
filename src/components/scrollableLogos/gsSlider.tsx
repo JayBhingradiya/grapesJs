@@ -68,7 +68,6 @@ const GsLogosSlider = (editor: Editor, pageId: string) => {
             }
           });
 
-        console.log("componentIdcomponentId", editor.getComponents());
         this.listenTo(this, "change:attributes", this.updateSlider);
         editor.Commands.add("add-logoSlide", () => {
           this.addSlide();
