@@ -36,7 +36,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  const projectID = "cg-featured-product";
+  // const projectID = "cg-featured-product";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
