@@ -14,12 +14,13 @@ const FeaturedCategory = ({ serverSideData }: FeaturedCategoryProps) => {
 
   const ServerData = serverSideData?.value?.map((data) => data);
   const tabData = ServerData?.find((name) => name.tabName === activetab);
+  console.log("tabData", tabData);
 
   useEffect(() => {
     const fetchDataFromName = async () => {
       await axios({
         method: "POST",
-        url: "https://front-staging.parsonskellogg.services/StoreProduct/getfeaturedproductitemsbytagnameandsename.json",
+        url: "https://cg-prod.parsonskellogg.services/StoreProduct/getfeaturedproductitemsbytagnameandsename.json",
         headers: {
           "Content-Type": "application/json",
         },

@@ -13,17 +13,18 @@ const Home = () => {
     const fetchData = async () => {
       const data = await axios({
         method: "POST",
-        url: "https://front-staging.parsonskellogg.services/CmsComponents/getpagecomponents.json",
+        url: "https://cg-prod.parsonskellogg.services/CmsComponents/getpagecomponents.json",
         headers: {
           "Content-Type": "application/json",
         },
         data: {
-          pageId: 295,
+          pageId: 564,
           type: "Topic",
         },
       });
-      const featureProductData = data?.data?.data?.find(
-        (comp: any) => comp.name === "Featured Products"
+
+      const featureProductData = data?.data?.data?.find((comp: any) =>
+        comp.html.includes("Featured_Products")
       );
 
       if (featureProductData) {
@@ -32,6 +33,7 @@ const Home = () => {
     };
     fetchData();
   }, []);
+  console.log("serverData", serverData);
 
   return <GrapeJsEditor serverSideData={serverData} />;
 };

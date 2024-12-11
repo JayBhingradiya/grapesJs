@@ -1,9 +1,9 @@
 import { Editor } from "grapesjs";
 import { createRoot } from "react-dom/client";
-import BrAlphabet from "./br_alphabet";
+import BrAlphabet from "./brAlphabet";
 
 const GsBrAlphabet = (editor: Editor) => {
-  editor.Components.addType("dynamic-products", {
+  editor.Components.addType("alphabet-listing-section", {
     view: {
       onRender({ el }) {
         const root = createRoot(el);
@@ -16,7 +16,7 @@ const GsBrAlphabet = (editor: Editor) => {
     label: "Br Alphabet",
     category: "React-component",
     content: {
-      type: "dynamic-products",
+      type: "alphabet-listing-section",
     },
   });
 };

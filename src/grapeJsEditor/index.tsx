@@ -16,13 +16,15 @@ import GsFeaturedCategory from "@/components/featuredCategory/gsFeaturedCategory
 import GsLogosSlider from "@/components/scrollableLogos/gsSlider";
 import { usePathname } from "next/navigation";
 import { styleManagerConfig } from "./styleManagerConfig";
-import GsBrAlphabet from "@/components/br_alphabet/gs_brAlphabet";
+import GsBrAlphabet from "@/components/brAlphabet/gsBrAlphabet";
+import gsLogoListing from "@/components/logoLisitng/gsLogoListing";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
   projectID?: string;
 }
 const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
+  console.log("serverSideData", serverSideData);
   const params = usePathname();
   const pageId = params.split("").slice(1).join("") || "grapesjs";
 
@@ -34,7 +36,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  // const projectID = "alphabet-brand";
+  const projectID = "cg-featured-product";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -98,6 +100,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsFeaturedCategory(editorRef.current, serverSideData || []);
     GsLogosSlider(editorRef.current, pageId);
     GsBrAlphabet(editorRef.current);
+    gsLogoListing(editorRef.current);
   }, [serverSideData]);
 
   return (

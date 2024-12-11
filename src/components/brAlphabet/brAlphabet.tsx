@@ -18,21 +18,21 @@ const BrAlphabet = () => {
         .then((apiData: any) => {
           const alphabetApiData = apiData?.data?.data;
           setAlphabetData(alphabetApiData);
-          //   alphabetApiData.map((data: any) =>
-          //     albhabetSet.add(data.brandName[0])
-          //   );
         });
     };
     getAlphabetData();
   }, []);
 
   const highlightBrand = (character: string) => {
-    const iframe = document.querySelector("iframe");
+    const iframe = document?.querySelector("iframe");
+    let element: HTMLElement | null = null;
     if (iframe) {
-      const iframeContent = iframe.contentDocument;
-      const element = iframeContent?.getElementById(character);
-      element?.scrollIntoView({ behavior: "smooth" });
+      const iframeContent = iframe?.contentDocument;
+      element = iframeContent?.getElementById(character) || null;
+    } else {
+      element = document?.getElementById(character);
     }
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

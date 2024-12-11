@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import ImageSlider from "@/components/customImageSlider/sliderComponents";
 import SrollableLogos from "@/components/scrollableLogos/scrollableLogos";
 import FeaturedCategory from "../featuredCategory/featuredCategory";
+import BrAlphabet from "../brAlphabet/brAlphabet";
+import LogoListing from "../logoLisitng/logoListing";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -85,6 +87,8 @@ const Preview = ({ pageId }: { pageId: string }) => {
     fetchData();
   }, [pageId]);
 
+  console.log("responseresponse", finalData, stylesData);
+
   useEffect(() => {
     if (stylesData) {
       const styleTag = document.createElement("style");
@@ -131,6 +135,10 @@ const Preview = ({ pageId }: { pageId: string }) => {
               serverSideData={item?.attributes?.serverSideData}
             />
           );
+        } else if (item.type === "logo-listing") {
+          return <LogoListing key={index} />;
+        } else if (item.type === "alphabet-listing-section") {
+          return <BrAlphabet key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }
