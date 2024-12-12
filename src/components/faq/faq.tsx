@@ -20,14 +20,24 @@ const Faq = () => {
         "Yes, we offer gift cards in various denominations. They can be purchased online or in-store.",
     },
     {
-      title: "Can i contact customer service for assitance?",
+      title: "Can i contact customer service for assistance?",
       description:
         "Yes, our customer service team is available via email, phone, or live chat to assist you with any questions or concerns you may have.",
     },
   ];
-  const [openAccordian, setOpenAccordian] = useState(false);
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null); 
+
+  const toggleAccordion = (index: number) => {
+    if (openIndex === index) {
+      setOpenIndex(null); 
+    } else {
+      setOpenIndex(index); 
+    }
+  };
+
   return (
-    <section className="px-5 py-11 w-full overflow-hidden  bg-gray-200">
+    <section className="px-5 py-11 w-full overflow-hidden bg-gray-200">
       <div className="w-full mx-auto">
         <div className="flex justify-center gap-4">
           <div className="w-4/12">
@@ -44,19 +54,19 @@ const Faq = () => {
                     >
                       <div
                         className="flex justify-between"
-                        onClick={() => setOpenAccordian(true)}
+                        onClick={() => toggleAccordion(index)}
                       >
                         <div className="font-semibold">{data?.title}</div>
                         <div>
-                          {openAccordian ? (
+                          {openIndex === index ? (
                             <IoIosArrowUp />
                           ) : (
                             <IoIosArrowDown />
                           )}
                         </div>
                       </div>
-                      {openAccordian && (
-                        <div className="text-sm">{data.description}</div>
+                      {openIndex === index && (
+                        <div className="text-sm mt-2">{data.description}</div>
                       )}
                     </div>
                   );
