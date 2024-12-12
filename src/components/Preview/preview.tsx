@@ -95,8 +95,6 @@ const Preview = ({ pageId }: { pageId: string }) => {
     fetchData();
   }, [pageId]);
 
-  console.log("responseresponse", finalData, stylesData);
-
   useEffect(() => {
     if (stylesData) {
       const styleTag = document.createElement("style");

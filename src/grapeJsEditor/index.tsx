@@ -26,19 +26,18 @@ interface grapejsEditorProps {
   projectID?: string;
 }
 const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
-  console.log("serverSideData", serverSideData);
   const params = usePathname();
   const pageId = params.split("").slice(1).join("") || "grapesjs";
 
   const editorRef = useRef<Editor | null>(null);
 
-  const loadEndpoint = "api/loadData";
+  // const loadEndpoint = "api/loadData";
   // const saveEndpoint = "api/saveData";
 
-  // const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
+  const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  const projectID = "demoSite";
+  // const projectID = "demoSite";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -59,27 +58,27 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         options: {
           remote: {
             // Json
-            urlLoad: loadEndpoint,
-            urlStore: saveEndpoint,
-            onStore: (data) => {
-              console.log("datadatadatadata", data);
-              return { id: projectID, data };
-            },
-            onLoad: (result) => {
-              console.log("data", result.data);
-              return result.data.data || {};
-            },
-
-            // For DB
-            // contentTypeJson: true,
             // urlLoad: loadEndpoint,
             // urlStore: saveEndpoint,
             // onStore: (data) => {
-            //   return { id: pageId, data };
+            //   console.log("datadatadatadata", data);
+            //   return { id: projectID, data };
             // },
             // onLoad: (result) => {
+            //   console.log("data", result.data);
             //   return result.data.data || {};
             // },
+
+            // For DB
+            contentTypeJson: true,
+            urlLoad: loadEndpoint,
+            urlStore: saveEndpoint,
+            onStore: (data) => {
+              return { id: pageId, data };
+            },
+            onLoad: (result) => {
+              return result.data.data || {};
+            },
           },
         },
         autosave: true,
