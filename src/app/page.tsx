@@ -33,7 +33,6 @@ const Home = () => {
     };
     fetchData();
   }, []);
-  console.log("serverData", serverData);
 
   return <GrapeJsEditor serverSideData={serverData} />;
 };

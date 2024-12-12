@@ -18,6 +18,8 @@ import { usePathname } from "next/navigation";
 import { styleManagerConfig } from "./styleManagerConfig";
 import GsBrAlphabet from "@/components/brAlphabet/gsBrAlphabet";
 import gsLogoListing from "@/components/logoLisitng/gsLogoListing";
+import GsReview from "@/components/review/gsReview";
+import GsTwoSectionSlider from "@/components/faq/gsFaq";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -30,13 +32,13 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
-  // const loadEndpoint = "api/loadData";
+  const loadEndpoint = "api/loadData";
   // const saveEndpoint = "api/saveData";
 
-  const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
+  // const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  // const projectID = "cg-featured-product";
+  const projectID = "demoSite";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -57,27 +59,27 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         options: {
           remote: {
             // Json
-            // urlLoad: loadEndpoint,
-            // urlStore: saveEndpoint,
-            // onStore: (data) => {
-            //   console.log("datadatadatadata", data);
-            //   return { id: projectID, data };
-            // },
-            // onLoad: (result) => {
-            //   console.log("data", result.data);
-            //   return result.data.data || {};
-            // },
-
-            // For DB
-            contentTypeJson: true,
             urlLoad: loadEndpoint,
             urlStore: saveEndpoint,
             onStore: (data) => {
-              return { id: pageId, data };
+              console.log("datadatadatadata", data);
+              return { id: projectID, data };
             },
             onLoad: (result) => {
+              console.log("data", result.data);
               return result.data.data || {};
             },
+
+            // For DB
+            // contentTypeJson: true,
+            // urlLoad: loadEndpoint,
+            // urlStore: saveEndpoint,
+            // onStore: (data) => {
+            //   return { id: pageId, data };
+            // },
+            // onLoad: (result) => {
+            //   return result.data.data || {};
+            // },
           },
         },
         autosave: true,
@@ -87,6 +89,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         styles: [
           "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",
           "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+          "",
         ],
       },
     });
@@ -101,6 +104,8 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsLogosSlider(editorRef.current, pageId);
     GsBrAlphabet(editorRef.current);
     gsLogoListing(editorRef.current);
+    GsReview(editorRef.current);
+    GsTwoSectionSlider(editorRef.current);
   }, [serverSideData]);
 
   return (

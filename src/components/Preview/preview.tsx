@@ -5,6 +5,8 @@ import SrollableLogos from "@/components/scrollableLogos/scrollableLogos";
 import FeaturedCategory from "../featuredCategory/featuredCategory";
 import BrAlphabet from "../brAlphabet/brAlphabet";
 import LogoListing from "../logoLisitng/logoListing";
+import Faq from "../faq/faq";
+import Review from "../review/review";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -45,6 +47,12 @@ const renderComponent = (component: any, index: number) => {
       <button key={index} {...attributes} disabled>
         {components && components.map(renderComponent)}
       </button>
+    );
+  }
+  if (type === "video") {
+    console.log("attributes?.src", component);
+    return (
+      <video key={index} src={component?.src} autoPlay controls loop></video>
     );
   }
 
@@ -139,6 +147,10 @@ const Preview = ({ pageId }: { pageId: string }) => {
           return <LogoListing key={index} />;
         } else if (item.type === "alphabet-listing-section") {
           return <BrAlphabet key={index} />;
+        } else if (item.type === "two-section") {
+          return <Faq key={index} />;
+        } else if (item.type === "review-list") {
+          return <Review key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }

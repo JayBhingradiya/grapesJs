@@ -4,11 +4,14 @@ import ImageSlider from "./sliderComponents";
 import AllTraits from "./traits";
 import { v4 as uuidv4 } from "uuid";
 import {
+  handleButton2BackgroundColorChangeHandler,
+  handleButton2ChangeHandler,
   handleButtonBackgroundChangeHandler,
   handleButtonTextChangeHandler,
   handleDescriptionChangeHandler,
   handleImageChangeHandler,
   handleMediaTypeChangeHandler,
+  handlePositionChangeHandler,
   handleTextColorChangeHandler,
   handleTitleChangeHandler,
 } from "./sliderChangeHandler";
@@ -21,6 +24,9 @@ export interface Slide {
   buttonBackgroundColor: string;
   textColor: string;
   mediaType: string;
+  position: string;
+  button2Text: string;
+  button2BackgroundColor: string;
 }
 
 const GsSlider = (editor: Editor, pageId: string) => {
@@ -34,6 +40,9 @@ const GsSlider = (editor: Editor, pageId: string) => {
       buttonBackgroundColor: "white",
       textColor: "white",
       mediaType: "image",
+      position: "center",
+      button2BackgroundColor: "white",
+      button2Text: "button",
     },
   ];
 
@@ -98,6 +107,7 @@ const GsSlider = (editor: Editor, pageId: string) => {
       },
       addSlide() {
         const attributes = this.get("attributes");
+        console.log("attributes", attributes);
         const slides = attributes ? attributes.slides : defaultSlides;
         slides.push({
           image: "",
@@ -107,6 +117,7 @@ const GsSlider = (editor: Editor, pageId: string) => {
           buttonBackgroundColor: "",
           textColor: "",
           mediaType: "image",
+          position: "",
         });
         this.set("attributes", { slides });
         this.addSlideTraits(slides.length - 1);
@@ -153,6 +164,26 @@ const GsSlider = (editor: Editor, pageId: string) => {
           handleTextColorChangeHandler(model, value, index, defaultSlides);
           model.updateSlider();
         });
+        this.on(`change:slide${index + 1}_position`, (model, value) => {
+          handlePositionChangeHandler(model, value, index, defaultSlides);
+          model.updateSlider();
+        });
+        this.on(`change:slide${index + 1}_button2`, (model, value) => {
+          handleButton2ChangeHandler(model, value, index, defaultSlides);
+          model.updateSlider();
+        });
+        this.on(
+          `change:slide${index + 1}_button2_background_color`,
+          (model, value) => {
+            handleButton2BackgroundColorChangeHandler(
+              model,
+              value,
+              index,
+              defaultSlides
+            );
+            model.updateSlider();
+          }
+        );
       },
     },
     view: {

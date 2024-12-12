@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "storagemedia.corporategear.com",
       },
+      {
+        protocol: "https",
+        hostname: "amber-theme-demo.myshopify.com",
+      },
     ],
   },
 };

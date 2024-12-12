@@ -11,10 +11,25 @@ interface ImageSlidesProps {
     buttonBackgroundColor: string;
     textColor: string;
     mediaType: string;
+    position: string;
+    button2Text: string;
+    button2BackgroundColor: string;
   }[];
 }
 
 const ImageSlider = ({ slides }: ImageSlidesProps) => {
+
+  const getContentPosition = (pos: string) => {
+    switch (pos) {
+      case "left-bottom":
+        return "bottom-6 left-6";
+      case "left-top":
+        return "top-0 left-0";
+      default:
+        return "left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2";
+    }
+  };
+
   return (
     <div>
       <Swiper
@@ -47,7 +62,11 @@ const ImageSlider = ({ slides }: ImageSlidesProps) => {
                       alt="Placeholder"
                     />
                   )}
-                  <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div
+                    className={`flex flex-col absolute ${getContentPosition(
+                      item.position
+                    )} `}
+                  >
                     <div
                       className="font-bold text-lg"
                       style={{ color: item.textColor }}
@@ -60,12 +79,25 @@ const ImageSlider = ({ slides }: ImageSlidesProps) => {
                     >
                       {item.description}
                     </div>
-                    <div
-                      style={{
-                        backgroundColor: item.buttonBackgroundColor,
-                      }}
-                    >
-                      {item.buttonText}
+                    <div className="flex justify-between mt-2 gap-3">
+                      <div
+                        className="p-3 rounded-lg"
+                        style={{
+                          backgroundColor: item.buttonBackgroundColor,
+                        }}
+                      >
+                        {item.buttonText}
+                      </div>
+                      {item.button2Text && (
+                        <div
+                          className="p-3 rounded-lg"
+                          style={{
+                            backgroundColor: item.button2BackgroundColor,
+                          }}
+                        >
+                          {item.button2Text}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -99,3 +99,40 @@ export const handleMediaTypeChangeHandler = (
   );
   updateSlides(model, updatedSlides);
 };
+
+export const handlePositionChangeHandler = (
+  model: any,
+  value: string,
+  index: number,
+  defaultSlides: Slide[]
+) => {
+  const slides = getSlides(model, defaultSlides);
+  const updatedSlides = slides.map((slide, i) =>
+    i === index ? { ...slide, position: value } : slide
+  );
+  updateSlides(model, updatedSlides);
+};
+export const handleButton2ChangeHandler = (
+  model: any,
+  value: string,
+  index: number,
+  defaultSlides: Slide[]
+) => {
+  const slides = getSlides(model, defaultSlides);
+  const updatedSlides = slides.map((slide, i) =>
+    i === index ? { ...slide, button2Text: value } : slide
+  );
+  updateSlides(model, updatedSlides);
+};
+export const handleButton2BackgroundColorChangeHandler = (
+  model: any,
+  value: string,
+  index: number,
+  defaultSlides: Slide[]
+) => {
+  const slides = getSlides(model, defaultSlides);
+  const updatedSlides = slides.map((slide, i) =>
+    i === index ? { ...slide, button2BackgroundColor: value } : slide
+  );
+  updateSlides(model, updatedSlides);
+};

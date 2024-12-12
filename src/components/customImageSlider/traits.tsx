@@ -42,6 +42,27 @@ const AllTraits = (index: number) => {
       name: `slide${index + 1}_text_color`,
       changeProp: true,
     },
+    {
+      type: "text",
+      label: `Slide ${index + 1}  Position`,
+      name: `slide${index + 1}_position`,
+      default: "center",
+      changeProp: true,
+    },
+    {
+      type: "text",
+      label: `Slide ${index + 1}  Button2`,
+      name: `slide${index + 1}_button2`,
+      default: "center",
+      changeProp: true,
+    },
+    {
+      type: "text",
+      label: `Slide ${index + 1} Button2 Background Color`,
+      name: `slide${index + 1}_button2_background_color`,
+      default: "center",
+      changeProp: true,
+    },
   ];
 };
 
