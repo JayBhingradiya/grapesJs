@@ -10,78 +10,66 @@ const Faq = () => {
         "We offer a 30-day return policy for all unused items in their original packaging.",
     },
     {
-      title: "Do you offers international shipping?",
+      title: "Do you offer international shipping?",
       description:
         "Yes, we offer worldwide shipping. Shipping rates and delivery times may vary by location.",
     },
     {
-      title: "Do you offers gift cards?",
+      title: "Do you offer gift cards?",
       description:
         "Yes, we offer gift cards in various denominations. They can be purchased online or in-store.",
     },
     {
-      title: "Can i contact customer service for assistance?",
+      title: "Can I contact customer service for assistance?",
       description:
-        "Yes, our customer service team is available via email, phone, or live chat to assist you with any questions or concerns you may have.",
+        "Yes, our customer service team is available via email, phone, or live chat to assist you with any questions or concerns you may have. For additional inquiries, please feel free to reach out to our support team anytime.",
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null); 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
     if (openIndex === index) {
-      setOpenIndex(null); 
+      setOpenIndex(null);
     } else {
-      setOpenIndex(index); 
+      setOpenIndex(index);
     }
   };
 
   return (
-    <section className="px-5 py-11 w-full overflow-hidden bg-gray-200">
-      <div className="w-full mx-auto">
-        <div className="flex justify-center gap-4">
-          <div className="w-4/12">
-            <div className="block relative w-full h-full pb-4">
-              <div className="text-5xl font-bold">
-                Frequently Asked Questions
+    <section className="px-5 py-11 w-full h-full overflow-hidden">
+      <div className="w-full h-full max-w-xl mx-auto">
+        <div className="text-left mb-8">
+          <h1 className="text-5xl font-bold">Frequently Asked Questions</h1>
+        </div>
+        <div>
+          {accordianData?.map((data, index) => {
+            return (
+              <div
+                className="block border border-gray-600 rounded-lg px-6 pt-5 pb-4 mt-4 cursor-pointer"
+                key={index}
+              >
+                <div
+                  className="flex justify-between items-center"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <div className="font-semibold">{data?.title}</div>
+                  <div>
+                    {openIndex === index ? (
+                      <IoIosArrowUp size={20} />
+                    ) : (
+                      <IoIosArrowDown size={20} />
+                    )}
+                  </div>
+                </div>
+                {openIndex === index && (
+                  <div className="text-sm mt-3 overflow-hidden text-gray-700">
+                    {data.description}
+                  </div>
+                )}
               </div>
-              <div>
-                {accordianData?.map((data, index) => {
-                  return (
-                    <div
-                      className="block border border-gray-600 rounded-lg px-9 pt-5 pb-4 mt-8 cursor-pointer"
-                      key={index}
-                    >
-                      <div
-                        className="flex justify-between"
-                        onClick={() => toggleAccordion(index)}
-                      >
-                        <div className="font-semibold">{data?.title}</div>
-                        <div>
-                          {openIndex === index ? (
-                            <IoIosArrowUp />
-                          ) : (
-                            <IoIosArrowDown />
-                          )}
-                        </div>
-                      </div>
-                      {openIndex === index && (
-                        <div className="text-sm mt-2">{data.description}</div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-          <div className="w-5/12">
-            <div>
-              <img
-                src="https://amber-theme-demo.myshopify.com/cdn/shop/files/1329_12a08ae0-4f7d-4615-ad7a-4af5245dccde.jpg?v=1678544520&width=2000"
-                className="border rounded-lg w-full h-full"
-              />
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

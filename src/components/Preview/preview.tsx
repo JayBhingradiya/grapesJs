@@ -7,6 +7,7 @@ import BrAlphabet from "../brAlphabet/brAlphabet";
 import LogoListing from "../logoLisitng/logoListing";
 import Faq from "../faq/faq";
 import Review from "../review/review";
+import Slides from "../slides/slides";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -50,7 +51,6 @@ const renderComponent = (component: any, index: number) => {
     );
   }
   if (type === "video") {
-    console.log("attributes?.src", component);
     return (
       <video key={index} src={component?.src} autoPlay controls loop></video>
     );
@@ -62,6 +62,13 @@ const renderComponent = (component: any, index: number) => {
         {components && components.map(renderComponent)}
       </a>
     );
+  }
+
+  if (type === "slides") {
+    return <Slides key={index} />;
+  }
+  if (type === "faq-section") {
+    return <Faq key={index} />;
   }
 
   return (
@@ -149,6 +156,10 @@ const Preview = ({ pageId }: { pageId: string }) => {
           return <Faq key={index} />;
         } else if (item.type === "review-list") {
           return <Review key={index} />;
+        } else if (item.type === "slides") {
+          return <Slides key={index} />;
+        } else if (item.type === "faq-section") {
+          return <Faq key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }

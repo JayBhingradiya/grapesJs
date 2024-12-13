@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const PrevBtn = (props: any) => {
+export const PrevBtn = (props: any) => {
   const { onClick } = props;
   return (
     <button
@@ -26,7 +26,7 @@ const PrevBtn = (props: any) => {
   );
 };
 
-const NextBtn = (props: any) => {
+export const NextBtn = (props: any) => {
   const { onClick } = props;
   return (
     <button
@@ -108,7 +108,7 @@ const Review = () => {
 
         <div className="ml-10">
           <div className="flex">
-            <PrevBtn onClick={() => swiperRef.current?.sliderPrev()} />
+            <PrevBtn onClick={() => swiperRef.current?.slidePrev()} />
             <NextBtn onClick={() => swiperRef.current?.slideNext()} />
           </div>
         </div>

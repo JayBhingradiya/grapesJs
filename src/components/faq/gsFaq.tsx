@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import TwoSectionSlider from "./faq";
 
 const GsFaq = (editor: Editor) => {
-  editor.Components.addType("two-section", {
+  editor.Components.addType("faq-section", {
     view: {
       onRender({ el }) {
         const root = createRoot(el);
@@ -12,11 +12,11 @@ const GsFaq = (editor: Editor) => {
       },
     },
   });
-  editor.BlockManager.add("two-section-list", {
-    label: "Two Section",
+  editor.BlockManager.add("faq-section", {
+    label: "Faq Section",
     category: "React-component",
     content: {
-      type: "two-section",
+      type: "faq-section",
     },
   });
 };

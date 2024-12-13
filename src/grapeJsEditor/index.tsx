@@ -19,7 +19,8 @@ import { styleManagerConfig } from "./styleManagerConfig";
 import GsBrAlphabet from "@/components/brAlphabet/gsBrAlphabet";
 import gsLogoListing from "@/components/logoLisitng/gsLogoListing";
 import GsReview from "@/components/review/gsReview";
-import GsTwoSectionSlider from "@/components/faq/gsFaq";
+import GsSlides from "@/components/slides/gsSlides";
+import GsFaq from "@/components/faq/gsFaq";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -104,7 +105,8 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsBrAlphabet(editorRef.current);
     gsLogoListing(editorRef.current);
     GsReview(editorRef.current);
-    GsTwoSectionSlider(editorRef.current);
+    GsFaq(editorRef.current);
+    GsSlides(editorRef.current);
   }, [serverSideData]);
 
   return (
