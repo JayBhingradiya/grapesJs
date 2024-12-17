@@ -33,13 +33,13 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
-  const loadEndpoint = "api/loadData";
+  // const loadEndpoint = "api/loadData";
   // const saveEndpoint = "api/saveData";
 
-  // const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
+  const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  const projectID = "kirschberg_cms";
+  // const projectID = "kirschberg_cms";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -60,27 +60,27 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         options: {
           remote: {
             // Json
-            urlLoad: loadEndpoint,
-            urlStore: saveEndpoint,
-            onStore: (data) => {
-              console.log("datadatadatadata", data);
-              return { id: projectID, data };
-            },
-            onLoad: (result) => {
-              console.log("data", result.data);
-              return result.data.data || {};
-            },
-
-            // For DB
-            // contentTypeJson: true,
             // urlLoad: loadEndpoint,
             // urlStore: saveEndpoint,
             // onStore: (data) => {
-            //   return { id: pageId, data };
+            //   console.log("datadatadatadata", data);
+            //   return { id: projectID, data };
             // },
             // onLoad: (result) => {
+            //   console.log("data", result.data);
             //   return result.data.data || {};
             // },
+
+            // For DB
+            contentTypeJson: true,
+            urlLoad: loadEndpoint,
+            urlStore: saveEndpoint,
+            onStore: (data) => {
+              return { id: pageId, data };
+            },
+            onLoad: (result) => {
+              return result.data.data || {};
+            },
           },
         },
         autosave: true,
