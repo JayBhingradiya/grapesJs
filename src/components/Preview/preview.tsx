@@ -8,6 +8,7 @@ import LogoListing from "../logoLisitng/logoListing";
 import Faq from "../faq/faq";
 import Review from "../review/review";
 import Slides from "../slides/slides";
+import HoverTextSection from "../hoverTextSection/hoverTextSection";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -69,6 +70,20 @@ const renderComponent = (component: any, index: number) => {
   }
   if (type === "faq-section") {
     return <Faq key={index} />;
+  }
+  if (type === "hover-section") {
+    return (
+      <HoverTextSection
+        data={{
+          bgColor: attributes.bgColor,
+          description: attributes?.description,
+          height: attributes?.height,
+          image: attributes?.imageSrc,
+          title: attributes?.title,
+        }}
+        key={index}
+      />
+    );
   }
 
   return (
@@ -160,6 +175,19 @@ const Preview = ({ pageId }: { pageId: string }) => {
           return <Slides key={index} />;
         } else if (item.type === "faq-section") {
           return <Faq key={index} />;
+        } else if (item.type === "hover-section") {
+          return (
+            <HoverTextSection
+              data={{
+                bgColor: item.attributes.bgColor,
+                description: item.attributes?.description,
+                height: item.attributes?.height,
+                image: item.attributes?.imageSrc,
+                title: item.attributes?.title,
+              }}
+              key={index}
+            />
+          );
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }
