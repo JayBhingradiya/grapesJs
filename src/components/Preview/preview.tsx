@@ -9,6 +9,7 @@ import Faq from "../faq/faq";
 import Review from "../review/review";
 import Slides from "../slides/slides";
 import HoverTextSection from "../hoverTextSection/hoverTextSection";
+import TabAccordian from "../tabAccordian/tabAccordian";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -84,6 +85,9 @@ const renderComponent = (component: any, index: number) => {
         key={index}
       />
     );
+  }
+  if (type === "tab-accordian") {
+    return <TabAccordian key={index} />;
   }
 
   return (
@@ -188,6 +192,8 @@ const Preview = ({ pageId }: { pageId: string }) => {
               key={index}
             />
           );
+        } else if (item.type === "tab-accordian") {
+          return <TabAccordian key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }

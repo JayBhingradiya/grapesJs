@@ -22,6 +22,7 @@ import GsReview from "@/components/review/gsReview";
 import GsSlides from "@/components/slides/gsSlides";
 import GsFaq from "@/components/faq/gsFaq";
 import GsHoverTextSection from "@/components/hoverTextSection/gsHoverTextSection";
+import GsTabAccordian from "@/components/tabAccordian/gsTabAccordian";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -33,13 +34,9 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
-  // const loadEndpoint = "api/loadData";
-  // const saveEndpoint = "api/saveData";
-
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
-  // const projectID = "kirschberg_cms";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -90,7 +87,6 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         styles: [
           "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",
           "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
-          "",
         ],
       },
     });
@@ -109,6 +105,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsFaq(editorRef.current);
     GsSlides(editorRef.current);
     GsHoverTextSection(editorRef.current);
+    GsTabAccordian(editorRef.current);
   }, [serverSideData]);
 
   return (
