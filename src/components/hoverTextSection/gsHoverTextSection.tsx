@@ -26,7 +26,7 @@ const GsHoverTextSection = (editor: Editor) => {
           title: defaultSlide.title,
           description: defaultSlide.description,
           bgColor: defaultSlide.bgColor,
-          height: defaultSlide.height,
+          containerHeight: defaultSlide.height,
         },
         traits: [
           {

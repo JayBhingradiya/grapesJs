@@ -77,7 +77,7 @@ const renderComponent = (component: any, index: number) => {
         data={{
           bgColor: attributes.bgColor,
           description: attributes?.description,
-          height: attributes?.height,
+          height: attributes?.containerHeight,
           image: attributes?.imageSrc,
           title: attributes?.title,
         }}
@@ -181,7 +181,7 @@ const Preview = ({ pageId }: { pageId: string }) => {
               data={{
                 bgColor: item.attributes.bgColor,
                 description: item.attributes?.description,
-                height: item.attributes?.height,
+                height: item.attributes?.containerHeight,
                 image: item.attributes?.imageSrc,
                 title: item.attributes?.title,
               }}
