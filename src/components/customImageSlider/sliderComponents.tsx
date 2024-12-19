@@ -18,7 +18,6 @@ interface ImageSlidesProps {
 }
 
 const ImageSlider = ({ slides }: ImageSlidesProps) => {
-
   const getContentPosition = (pos: string) => {
     switch (pos) {
       case "left-bottom":
@@ -31,7 +30,7 @@ const ImageSlider = ({ slides }: ImageSlidesProps) => {
   };
 
   return (
-    <div>
+    <div className="container mx-auto">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
