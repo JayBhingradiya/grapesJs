@@ -23,6 +23,8 @@ import GsSlides from "@/components/slides/gsSlides";
 import GsFaq from "@/components/faq/gsFaq";
 import GsHoverTextSection from "@/components/hoverTextSection/gsHoverTextSection";
 import GsTabAccordian from "@/components/tabAccordian/gsTabAccordian";
+import GsHoverDisplayContent from "@/components/hoverDisplayContent/GsHoverDisplayContent";
+import GsSlideAnimation from "@/components/slidesAnimation/gsSlideAnimation";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -106,6 +108,8 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsSlides(editorRef.current);
     GsHoverTextSection(editorRef.current);
     GsTabAccordian(editorRef.current);
+    GsHoverDisplayContent(editorRef.current);
+    GsSlideAnimation(editorRef.current);
   }, [serverSideData]);
 
   return (

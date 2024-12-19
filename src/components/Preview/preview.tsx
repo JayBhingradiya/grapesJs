@@ -10,6 +10,8 @@ import Review from "../review/review";
 import Slides from "../slides/slides";
 import HoverTextSection from "../hoverTextSection/hoverTextSection";
 import TabAccordian from "../tabAccordian/tabAccordian";
+import SlideAnimation from "../slidesAnimation/slideAnimation";
+import HoverDisplayContent from "../hoverDisplayContent/hoverDisplayContent";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -86,8 +88,11 @@ const renderComponent = (component: any, index: number) => {
       />
     );
   }
-  if (type === "tab-accordian") {
-    return <TabAccordian key={index} />;
+  if (type === "slide-animation") {
+    return <SlideAnimation key={index} />;
+  }
+  if (type === "hover-displayText") {
+    return <HoverDisplayContent key={index} />;
   }
 
   return (
@@ -108,7 +113,7 @@ const Preview = ({ pageId }: { pageId: string }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/loadGrapesData?id=${pageId || "grapesjs"}`
+          `/api/loadData?id=${pageId || "grapesjs"}`
         );
         const data = await response.json();
         setFinalData(data.data.data.pages[0].frames[0].component.components);
@@ -194,6 +199,10 @@ const Preview = ({ pageId }: { pageId: string }) => {
           );
         } else if (item.type === "tab-accordian") {
           return <TabAccordian key={index} />;
+        } else if (item.type === "slide-animation") {
+          return <SlideAnimation key={index} />;
+        } else if (item.type === "hover-displayText") {
+          return <HoverDisplayContent key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }

@@ -114,7 +114,7 @@ const Review = () => {
         </div>
       </div>
       <div className="mt-10">
-        <ul className=" w-full">
+        <ul className=" w-full h-full">
           <Swiper
             slidesPerView={4}
             slidesPerGroup={1}
