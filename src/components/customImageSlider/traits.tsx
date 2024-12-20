@@ -63,6 +63,13 @@ const AllTraits = (index: number) => {
       default: "center",
       changeProp: true,
     },
+    {
+      type: "text",
+      label: `Slide ${index + 1} visible small section`,
+      name: `slide${index + 1}_visible_small_section`,
+      default: "Yes",
+      changeProp: true,
+    },
   ];
 };
 

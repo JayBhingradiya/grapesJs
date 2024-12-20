@@ -14,6 +14,7 @@ interface ImageSlidesProps {
     position: string;
     button2Text: string;
     button2BackgroundColor: string;
+    descriptionSection: string;
   }[];
 }
 
@@ -61,44 +62,46 @@ const ImageSlider = ({ slides }: ImageSlidesProps) => {
                       alt="Placeholder"
                     />
                   )}
-                  <div
-                    className={`flex flex-col absolute ${getContentPosition(
-                      item.position
-                    )} `}
-                  >
+                  {item.descriptionSection == "yes" && (
                     <div
-                      className="font-bold text-lg"
-                      style={{ color: item.textColor }}
+                      className={`flex flex-col absolute ${getContentPosition(
+                        item.position
+                      )} `}
                     >
-                      {item.title}
-                    </div>
-                    <div
-                      className="font-bold text-sm"
-                      style={{ color: item.textColor }}
-                    >
-                      {item.description}
-                    </div>
-                    <div className="flex justify-between mt-2 gap-3">
                       <div
-                        className="p-3 rounded-lg"
-                        style={{
-                          backgroundColor: item.buttonBackgroundColor,
-                        }}
+                        className="font-bold text-lg"
+                        style={{ color: item.textColor }}
                       >
-                        {item.buttonText}
+                        {item.title}
                       </div>
-                      {item.button2Text && (
+                      <div
+                        className="font-bold text-sm"
+                        style={{ color: item.textColor }}
+                      >
+                        {item.description}
+                      </div>
+                      <div className="flex justify-between mt-2 gap-3">
                         <div
                           className="p-3 rounded-lg"
                           style={{
-                            backgroundColor: item.button2BackgroundColor,
+                            backgroundColor: item.buttonBackgroundColor,
                           }}
                         >
-                          {item.button2Text}
+                          {item.buttonText}
                         </div>
-                      )}
+                        {item.button2Text && (
+                          <div
+                            className="p-3 rounded-lg"
+                            style={{
+                              backgroundColor: item.button2BackgroundColor,
+                            }}
+                          >
+                            {item.button2Text}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </SwiperSlide>
             </div>

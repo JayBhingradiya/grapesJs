@@ -136,3 +136,16 @@ export const handleButton2BackgroundColorChangeHandler = (
   );
   updateSlides(model, updatedSlides);
 };
+
+export const handleVisibelDescriptionSectionChangeHandler = (
+  model: any,
+  value: string,
+  index: number,
+  defaultSlides: Slide[]
+) => {
+  const slides = getSlides(model, defaultSlides);
+  const updatedSlides = slides.map((slide, i) =>
+    i === index ? { ...slide, descriptionSection: value } : slide
+  );
+  updateSlides(model, updatedSlides);
+};

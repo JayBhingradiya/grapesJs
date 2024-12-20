@@ -14,6 +14,7 @@ import {
   handlePositionChangeHandler,
   handleTextColorChangeHandler,
   handleTitleChangeHandler,
+  handleVisibelDescriptionSectionChangeHandler,
 } from "./sliderChangeHandler";
 
 export interface Slide {
@@ -27,6 +28,7 @@ export interface Slide {
   position: string;
   button2Text: string;
   button2BackgroundColor: string;
+  descriptionSection: string;
 }
 
 const GsSlider = (editor: Editor, pageId: string) => {
@@ -43,6 +45,7 @@ const GsSlider = (editor: Editor, pageId: string) => {
       position: "center",
       button2BackgroundColor: "white",
       button2Text: "button",
+      descriptionSection: "yes",
     },
   ];
 
@@ -118,6 +121,9 @@ const GsSlider = (editor: Editor, pageId: string) => {
           textColor: "",
           mediaType: "image",
           position: "",
+          button2BackgroundColor: "white",
+          button2Text: "button",
+          descriptionSection: "yes",
         });
         this.set("attributes", { slides });
         this.addSlideTraits(slides.length - 1);
@@ -176,6 +182,18 @@ const GsSlider = (editor: Editor, pageId: string) => {
           `change:slide${index + 1}_button2_background_color`,
           (model, value) => {
             handleButton2BackgroundColorChangeHandler(
+              model,
+              value,
+              index,
+              defaultSlides
+            );
+            model.updateSlider();
+          }
+        );
+        this.on(
+          `change:slide${index + 1}_visible_small_section`,
+          (model, value) => {
+            handleVisibelDescriptionSectionChangeHandler(
               model,
               value,
               index,

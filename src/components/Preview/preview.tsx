@@ -67,7 +67,9 @@ const renderComponent = (component: any, index: number) => {
       </a>
     );
   }
-
+  if (type === "custom-slider") {
+    return <ImageSlider slides={attributes?.slides} key={index} />;
+  }
   if (type === "slides") {
     return <Slides key={index} />;
   }
