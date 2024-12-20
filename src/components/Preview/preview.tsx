@@ -94,6 +94,9 @@ const renderComponent = (component: any, index: number) => {
   if (type === "hover-displayText") {
     return <HoverDisplayContent key={index} />;
   }
+  if (type === "review-list") {
+    return <Review themedata={{ color: attributes.textColor }} key={index} />;
+  }
 
   return (
     <Tag key={index} {...elementProps}>
@@ -179,7 +182,12 @@ const Preview = ({ pageId }: { pageId: string }) => {
         } else if (item.type === "two-section") {
           return <Faq key={index} />;
         } else if (item.type === "review-list") {
-          return <Review key={index} />;
+          return (
+            <Review
+              themedata={{ color: item.attributes.textColor }}
+              key={index}
+            />
+          );
         } else if (item.type === "slides") {
           return <Slides key={index} />;
         } else if (item.type === "faq-section") {

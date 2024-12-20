@@ -43,7 +43,7 @@ const Slides = () => {
   ];
 
   return (
-    <div className="my-5 mx-5">
+    <div className="my-5 mx-3">
       <div className="flex items-center justify-evenly max-w-2xl">
         <PrevBtn onClick={() => swiperRef.current?.slidePrev()} />
         <div className="flex gap-4 w-4/5">

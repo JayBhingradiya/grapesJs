@@ -4,10 +4,11 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const PrevBtn = (props: any) => {
-  const { onClick } = props;
+  const { onClick, textColor } = props;
   return (
     <button
       name="Previous"
+      style={{ color: textColor }}
       className="bg-light-gray bg-opacity-90 flex justify-center items-center w-10 h-10 rounded-md shadow-md focus:outline-none"
       onClick={onClick}
     >
@@ -27,10 +28,11 @@ export const PrevBtn = (props: any) => {
 };
 
 export const NextBtn = (props: any) => {
-  const { onClick } = props;
+  const { onClick, textColor } = props;
   return (
     <button
       name="Next"
+      style={{ color: textColor }}
       className="bg-light-gray bg-opacity-90 flex justify-center items-center w-10 h-10 rounded-md shadow-md focus:outline-none"
       onClick={onClick}
     >
@@ -49,7 +51,13 @@ export const NextBtn = (props: any) => {
   );
 };
 
-const Review = () => {
+interface reviewDataField {
+  color: string;
+}
+interface reviewData {
+  themedata: reviewDataField;
+}
+const Review = ({ themedata }: reviewData) => {
   const swiperRef = useRef<any>(null);
 
   const previewCardData = [
@@ -98,68 +106,69 @@ const Review = () => {
   ];
 
   return (
-    <section className="block p-20">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <div>
-            <div className="text-4xl font-bold">Reviews</div>
-          </div>
-        </div>
+    <section>
+      <div className="max-w-5xl mx-auto flex items-center justify-evenly">
+        <PrevBtn
+          onClick={() => swiperRef.current?.slidePrev()}
+          textColor={themedata.color}
+        />
 
-        <div className="ml-10">
-          <div className="flex">
-            <PrevBtn onClick={() => swiperRef.current?.slidePrev()} />
-            <NextBtn onClick={() => swiperRef.current?.slideNext()} />
-          </div>
-        </div>
-      </div>
-      <div className="mt-10">
-        <ul className=" w-full h-full">
-          <Swiper
-            slidesPerView={4}
-            slidesPerGroup={1}
-            className="mySwiper"
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-          >
-            {previewCardData?.map((data, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <li className=" p-4">
-                    <div className="flex mb-3">
-                      {Array.from({ length: 5 }).map((_, index) => {
-                        return (
-                          <div key={index} className=" p-1">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="15"
-                              viewBox="0 0 16 15"
+        <div className="mt-10 flex w-full ">
+          <ul className=" w-full h-full">
+            <Swiper
+              slidesPerView={4}
+              slidesPerGroup={2}
+              className="mySwiper"
+              modules={[Pagination]}
+              pagination={{ clickable: true }}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+            >
+              {previewCardData?.map((data, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <li className=" p-4">
+                      <div className="flex mb-3">
+                        {Array.from({ length: 5 }).map((_, index) => {
+                          return (
+                            <div
+                              key={index}
+                              className=" p-1"
+                              style={{ color: themedata.color }}
                             >
-                              <path
-                                fill="currentColor"
-                                d="M3.612,15.443a.531.531,0,0,1-.746-.592l.83-4.73L.173,6.765a.556.556,0,0,1,.283-.95l4.9-.7L7.538.792a.513.513,0,0,1,.927,0l2.184,4.327,4.9.7a.556.556,0,0,1,.282.95l-3.522,3.356.83,4.73a.531.531,0,0,1-.746.592L8,13.187,3.611,15.443Z"
-                                transform="translate(-0.001 -0.499)"
-                              ></path>
-                            </svg>
-                          </div>
-                        );
-                      })}
-                    </div>
-                    <div>
-                      <p>{data.description}</p>
-                    </div>
-                    <div className="pt-2">
-                      <h4>{data?.name}</h4>
-                      <h6>{data?.city}</h6>
-                    </div>
-                  </li>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </ul>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="15"
+                                viewBox="0 0 16 15"
+                              >
+                                <path
+                                  fill="currentColor"
+                                  d="M3.612,15.443a.531.531,0,0,1-.746-.592l.83-4.73L.173,6.765a.556.556,0,0,1,.283-.95l4.9-.7L7.538.792a.513.513,0,0,1,.927,0l2.184,4.327,4.9.7a.556.556,0,0,1,.282.95l-3.522,3.356.83,4.73a.531.531,0,0,1-.746.592L8,13.187,3.611,15.443Z"
+                                  transform="translate(-0.001 -0.499)"
+                                ></path>
+                              </svg>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      <div style={{ color: themedata.color }}>
+                        <p>{data.description}</p>
+                      </div>
+                      <div style={{ color: themedata.color }} className="pt-2">
+                        <h4>{data?.name}</h4>
+                        <h6>{data?.city}</h6>
+                      </div>
+                    </li>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </ul>
+        </div>
+        <NextBtn
+          onClick={() => swiperRef.current?.slideNext()}
+          textColor={themedata.color}
+        />
       </div>
     </section>
   );
