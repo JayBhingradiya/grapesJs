@@ -113,7 +113,7 @@ const Preview = ({ pageId }: { pageId: string }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/loadData?id=${pageId || "grapesjs"}`
+          `/api/loadGrapesData?id=${pageId || "grapesjs"}`
         );
         const data = await response.json();
         setFinalData(data.data.data.pages[0].frames[0].component.components);
