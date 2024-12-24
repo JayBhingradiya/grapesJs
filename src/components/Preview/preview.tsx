@@ -169,7 +169,7 @@ const Preview = ({ pageId }: { pageId: string }) => {
       const styleTag = document.createElement("style");
       console.log("styleTag", styleTag);
       styleTag.textContent = stylesData
-        .map((style: any, index) => {
+        .map((style: any) => {
           const cssString = Object.entries(style.style)
             .map(([key, value]) => `${key}: ${value};`)
             .join(" ");
