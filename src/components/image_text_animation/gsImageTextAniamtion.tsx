@@ -53,7 +53,6 @@ const GsImageTextAnimation = (editor: Editor) => {
         const buttonText = attributes?.buttonText || defaultData.buttonText;
         const componentNo = attributes?.componentNo || defaultData.componentNo;
 
-        console.log("attr", attributes);
         root.render(
           <ImageTextAnimation
             data={{

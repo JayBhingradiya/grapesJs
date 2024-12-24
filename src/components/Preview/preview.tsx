@@ -23,7 +23,6 @@ const renderComponent = (component: any, index: number) => {
   const { tagName, type, components, attributes, classes } = component;
   const Tag = tagName || "div";
 
-  // console.log("classes", components, attributes, classes);
   const classNameValue = Array.isArray(classes)
     ? classes
         .map((cls: any) => (typeof cls === "string" ? cls : cls.name || ""))
@@ -58,7 +57,6 @@ const renderComponent = (component: any, index: number) => {
     );
   }
   if (type === "video") {
-    console.log("com", component);
     return (
       <video
         key={index}
@@ -126,13 +124,7 @@ const renderComponent = (component: any, index: number) => {
       />
     );
   }
-  // if (type === "custom-code") {
-  //   const customCodeElement = document.querySelector(
-  //     '[data-gjs-type="custom-code"]'
-  //   );
-  //   console.log("customCodeElement", customCodeElement);
-  // }
-
+  
   return (
     <Tag key={index} {...elementProps}>
       {components &&
@@ -167,7 +159,6 @@ const Preview = ({ pageId }: { pageId: string }) => {
   useEffect(() => {
     if (stylesData) {
       const styleTag = document.createElement("style");
-      console.log("styleTag", styleTag);
       styleTag.textContent = stylesData
         .map((style: any) => {
           const cssString = Object.entries(style.style)

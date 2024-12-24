@@ -31,7 +31,6 @@ const ImageTextAnimation = ({ data }: imageTextSectionData) => {
 
     try {
       iframe = document.querySelector("iframe");
-      console.log("iframe", iframe);
       if (iframe?.contentDocument && iframe?.contentWindow) {
         doc = iframe.contentDocument;
         win = iframe.contentWindow;
