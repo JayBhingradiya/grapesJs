@@ -25,6 +25,7 @@ import GsHoverTextSection from "@/components/hoverTextSection/gsHoverTextSection
 import GsTabAccordian from "@/components/tabAccordian/gsTabAccordian";
 import GsHoverDisplayContent from "@/components/hoverDisplayContent/GsHoverDisplayContent";
 import GsSlideAnimation from "@/components/slidesAnimation/gsSlideAnimation";
+import GsImageTextAnimation from "@/components/image_text_animation/gsImageTextAniamtion";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -36,9 +37,13 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   const editorRef = useRef<Editor | null>(null);
 
+  // const loadEndpoint = "api/loadData";
+  // const saveEndpoint = "api/saveData";
+
   const loadEndpoint = `/api/loadGrapesData?id=${pageId}`;
   const saveEndpoint = "/api/saveGrapesData";
 
+  // const projectID = "giuligartner_cms";
   useEffect(() => {
     editorRef.current = grapesjs.init({
       height: "100vh",
@@ -58,7 +63,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         autoload: true,
         options: {
           remote: {
-            // Json
+            // // Json
             // urlLoad: loadEndpoint,
             // urlStore: saveEndpoint,
             // onStore: (data) => {
@@ -89,6 +94,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         styles: [
           "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css",
           "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+          "/styles/globals.css",
         ],
       },
     });
@@ -110,6 +116,7 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsTabAccordian(editorRef.current);
     GsHoverDisplayContent(editorRef.current);
     GsSlideAnimation(editorRef.current);
+    GsImageTextAnimation(editorRef.current);
   }, [serverSideData]);
 
   return (

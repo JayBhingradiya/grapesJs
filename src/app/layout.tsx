@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../../public/styles/globals.css";
 import "grapesjs/dist/css/grapes.min.css";
 import "swiper/css";
 import "swiper/css/navigation";

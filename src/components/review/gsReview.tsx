@@ -24,7 +24,6 @@ const GsReview = (editor: Editor) => {
       onRender({ el, model }) {
         const root = createRoot(el);
         const attributes = model.get("attributes");
-        console.log("attributes", attributes);
         const color = attributes?.textColor || defaultColor.textColor;
         root.render(<Review themedata={{ color }} />);
       },

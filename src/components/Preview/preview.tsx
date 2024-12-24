@@ -12,6 +12,8 @@ import HoverTextSection from "../hoverTextSection/hoverTextSection";
 import TabAccordian from "../tabAccordian/tabAccordian";
 import SlideAnimation from "../slidesAnimation/slideAnimation";
 import HoverDisplayContent from "../hoverDisplayContent/hoverDisplayContent";
+import ImageTextAnimation from "../image_text_animation/imageTextAnimation";
+import "../../../public/styles/globals.css";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -21,6 +23,7 @@ const renderComponent = (component: any, index: number) => {
   const { tagName, type, components, attributes, classes } = component;
   const Tag = tagName || "div";
 
+  // console.log("classes", components, attributes, classes);
   const classNameValue = Array.isArray(classes)
     ? classes
         .map((cls: any) => (typeof cls === "string" ? cls : cls.name || ""))
@@ -42,7 +45,7 @@ const renderComponent = (component: any, index: number) => {
         id={attributes?.id}
         src={attributes?.src}
         alt={attributes?.alt || "image"}
-        className={classes?.map((cls: any) => cls.name).join(" ")}
+        className={classNameValue}
       />
     );
   }
@@ -55,8 +58,16 @@ const renderComponent = (component: any, index: number) => {
     );
   }
   if (type === "video") {
+    console.log("com", component);
     return (
-      <video key={index} src={component?.src} autoPlay controls loop></video>
+      <video
+        key={index}
+        src={component?.src}
+        autoPlay={attributes?.autoPlay}
+        controls={attributes?.controls}
+        loop={attributes?.loop}
+        muted
+      ></video>
     );
   }
 
@@ -99,6 +110,28 @@ const renderComponent = (component: any, index: number) => {
   if (type === "review-list") {
     return <Review themedata={{ color: attributes.textColor }} key={index} />;
   }
+  if (type === "imageTextAnimation") {
+    return (
+      <ImageTextAnimation
+        key={index}
+        data={{
+          buttonText: attributes?.buttonText,
+          date: attributes?.date,
+          image1: attributes?.image1,
+          image2: attributes?.image2,
+          text: attributes?.text,
+          title: attributes?.title,
+          componentNo: attributes?.componentNo,
+        }}
+      />
+    );
+  }
+  // if (type === "custom-code") {
+  //   const customCodeElement = document.querySelector(
+  //     '[data-gjs-type="custom-code"]'
+  //   );
+  //   console.log("customCodeElement", customCodeElement);
+  // }
 
   return (
     <Tag key={index} {...elementProps}>
@@ -134,20 +167,26 @@ const Preview = ({ pageId }: { pageId: string }) => {
   useEffect(() => {
     if (stylesData) {
       const styleTag = document.createElement("style");
+      console.log("styleTag", styleTag);
       styleTag.textContent = stylesData
-        .map((style: any) => {
+        .map((style: any, index) => {
           const cssString = Object.entries(style.style)
             .map(([key, value]) => `${key}: ${value};`)
             .join(" ");
 
-          const selector = style.selectors[0].name
+          const selector = style.selectors[0]?.name
             ? `.${style.selectors[0].name}`
             : `${style.selectors}`;
-
           if (style.mediaText) {
             return `@media ${style.mediaText} { ${selector} {${cssString}}}`;
           } else if (style.state === "hover") {
             return `${selector}:hover {${cssString}}`;
+          } else if (style.state === "nth-child(1)") {
+            return `${selector}:nth-child(1) {${cssString}}`;
+          } else if (style.state === "nth-child(2)") {
+            return `${selector}:nth-child(2) {${cssString}}`;
+          } else if (style.state === "nth-child(3)") {
+            return `${selector}:nth-child(3) {${cssString}}`;
           } else {
             return `${selector} {${cssString}}`;
           }
@@ -213,6 +252,21 @@ const Preview = ({ pageId }: { pageId: string }) => {
           return <SlideAnimation key={index} />;
         } else if (item.type === "hover-displayText") {
           return <HoverDisplayContent key={index} />;
+        } else if (item.type === "imageTextAnimation") {
+          return (
+            <ImageTextAnimation
+              key={index}
+              data={{
+                buttonText: item.attributes?.buttonText,
+                date: item.attributes?.date,
+                image1: item.attributes?.image1,
+                image2: item.attributes?.image2,
+                text: item.attributes?.text,
+                title: item.attributes?.title,
+                componentNo: item.attributes?.componentNo,
+              }}
+            />
+          );
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }
