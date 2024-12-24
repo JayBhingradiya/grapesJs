@@ -181,12 +181,6 @@ const Preview = ({ pageId }: { pageId: string }) => {
             return `@media ${style.mediaText} { ${selector} {${cssString}}}`;
           } else if (style.state === "hover") {
             return `${selector}:hover {${cssString}}`;
-          } else if (style.state === "nth-child(1)") {
-            return `${selector}:nth-child(1) {${cssString}}`;
-          } else if (style.state === "nth-child(2)") {
-            return `${selector}:nth-child(2) {${cssString}}`;
-          } else if (style.state === "nth-child(3)") {
-            return `${selector}:nth-child(3) {${cssString}}`;
           } else {
             return `${selector} {${cssString}}`;
           }

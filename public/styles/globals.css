@@ -98,3 +98,35 @@
 .threed-image-container:hover img {
   transform: scale(1.1) translateZ(50px) rotateY(15deg);
 }
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: swipeUpDown 1.9s infinite ease-in-out;
+}
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes swipeUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
