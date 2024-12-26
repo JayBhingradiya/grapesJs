@@ -47,6 +47,29 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
 
   // const projectID = "giuligartner_cms";
   useEffect(() => {
+    setTimeout(function () {
+      Aos.init({
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        // offset: 120, // offset (in px) from the original trigger point
+        // delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger
+      });
+      Aos.refresh();
+    }, 100);
+
     editorRef.current = grapesjs.init({
       height: "100vh",
       container: "#gjs",
@@ -59,7 +82,96 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         },
       },
       selectorManager: { componentFirst: true },
-      styleManager: styleManagerConfig,
+      styleManager: {
+        sectors: [
+          ...styleManagerConfig.sectors,
+
+          {
+            name: "AOS (Animation On Scroll)",
+            open: false,
+            buildProps: [
+              "aos-animation",
+              "aos-duration",
+              "aos-delay",
+              "aos-offset",
+              "aos-easing",
+            ],
+            properties: [
+              {
+                name: "Animation",
+                property: "aos-animation",
+                type: "select",
+                defaults: "fade",
+                options: [
+                  { id: "fade", label: "Fade", value: "fade" },
+                  { id: "fade-up", label: "Fade Up", value: "fade-up" },
+                  { id: "fade-down", label: "Fade Down", value: "fade-down" },
+                  { id: "fade-left", label: "Fade Left", value: "fade-left" },
+                  {
+                    id: "fade-right",
+                    label: "Fade Right",
+                    value: "fade-right",
+                  },
+                  { id: "flip-left", label: "Flip Left", value: "flip-left" },
+                  {
+                    id: "flip-right",
+                    label: "Flip Right",
+                    value: "flip-right",
+                  },
+                  { id: "zoom-in", label: "Zoom In", value: "zoom-in" },
+                  { id: "zoom-out", label: "Zoom Out", value: "zoom-out" },
+                ],
+                onChange: (value: any) => {
+                  const selectedComponent = editorRef.current?.getSelected();
+                  if (selectedComponent) {
+                    selectedComponent.addAttributes({
+                      "data-aos": value?.value,
+                    });
+                  }
+                },
+              },
+              {
+                name: "Duration (ms)",
+                property: "aos-duration",
+                type: "integer",
+                defaults: "400",
+                step: 50,
+              },
+              {
+                name: "Delay (ms)",
+                property: "aos-delay",
+                type: "integer",
+                defaults: "0",
+                step: 50,
+              },
+              {
+                name: "Offset (px)",
+                property: "aos-offset",
+                type: "integer",
+                defaults: "120",
+                step: 10,
+              },
+              {
+                name: "Easing",
+                property: "aos-easing",
+                type: "select",
+                defaults: "ease",
+                options: [
+                  { id: "ease", label: "Ease", value: "ease" },
+                  { id: "ease-in", label: "Ease In", value: "ease-in" },
+                  { id: "ease-out", label: "Ease Out", value: "ease-out" },
+                  {
+                    id: "ease-in-out",
+                    label: "Ease In Out",
+                    value: "ease-in-out",
+                  },
+                  { id: "linear", label: "Linear", value: "linear" },
+                ],
+              },
+            ],
+          },
+        ],
+      },
       storageManager: {
         type: "remote",
         autoload: true,
@@ -121,22 +233,15 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsSlideAnimation(editorRef.current);
     GsImageTextAnimation(editorRef.current);
 
-    editorRef.current.on("component:update", (model) => {
-      const styles = model.getStyle();
-      if (styles["aos-animation"]) {
-        model.addAttributes({
-          "data-aos": styles["aos-animation"],
-        });
-        model.trigger("change:attributes");
-      }
-
+    editorRef.current.on("component:add", () => {
       Aos.refresh();
     });
 
-    Aos.init({
-      duration: 1000,
-      once: true,
+    editorRef.current.on("component:update", () => {
+      Aos.refresh();
     });
+
+    Aos.refresh();
   }, []);
 
   return (
