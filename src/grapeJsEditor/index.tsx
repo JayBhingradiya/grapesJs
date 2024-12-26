@@ -26,6 +26,8 @@ import GsTabAccordian from "@/components/tabAccordian/gsTabAccordian";
 import GsHoverDisplayContent from "@/components/hoverDisplayContent/GsHoverDisplayContent";
 import GsSlideAnimation from "@/components/slidesAnimation/gsSlideAnimation";
 import GsImageTextAnimation from "@/components/image_text_animation/gsImageTextAniamtion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 interface grapejsEditorProps {
   serverSideData?: serversideDataProps[];
@@ -63,7 +65,8 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
         autoload: true,
         options: {
           remote: {
-            // // Json
+            // Json
+            // contentTypeJson: true,
             // urlLoad: loadEndpoint,
             // urlStore: saveEndpoint,
             // onStore: (data) => {
@@ -117,7 +120,24 @@ const GrapeJsEditor: React.FC<grapejsEditorProps> = ({ serverSideData }) => {
     GsHoverDisplayContent(editorRef.current);
     GsSlideAnimation(editorRef.current);
     GsImageTextAnimation(editorRef.current);
-  }, [serverSideData]);
+
+    editorRef.current.on("component:update", (model) => {
+      const styles = model.getStyle();
+      if (styles["aos-animation"]) {
+        model.addAttributes({
+          "data-aos": styles["aos-animation"],
+        });
+        model.trigger("change:attributes");
+      }
+
+      Aos.refresh();
+    });
+
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <div>

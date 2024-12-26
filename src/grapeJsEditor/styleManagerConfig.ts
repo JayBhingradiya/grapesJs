@@ -479,5 +479,28 @@ export const styleManagerConfig = {
       open: false,
       buildProps: ["transition", "transform"],
     },
+    {
+      name: "AOS Animations",
+      open: false,
+      buildProps: ["aos-animation"],
+      properties: [
+        {
+          property: "aos-animation",
+          type: "select",
+          name: "Animation Type",
+          defaults: "",
+          options: [
+            { value: "", name: "None" },
+            { value: "fade", name: "Fade" },
+            { value: "fade-up", name: "Fade Up" },
+            { value: "fade-down", name: "Fade Down" },
+            { value: "fade-left", name: "Fade Left" },
+            { value: "fade-right", name: "Fade Right" },
+            { value: "zoom-in", name: "Zoom In" },
+            { value: "zoom-out", name: "Zoom Out" },
+          ],
+        },
+      ],
+    },
   ],
 };

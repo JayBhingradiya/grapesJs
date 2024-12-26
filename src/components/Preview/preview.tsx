@@ -14,6 +14,7 @@ import SlideAnimation from "../slidesAnimation/slideAnimation";
 import HoverDisplayContent from "../hoverDisplayContent/hoverDisplayContent";
 import ImageTextAnimation from "../image_text_animation/imageTextAnimation";
 import "../../../public/styles/globals.css";
+import Listing from "../listing/listingComponents";
 
 const renderComponent = (component: any, index: number) => {
   if (component.type === "textnode") {
@@ -124,7 +125,10 @@ const renderComponent = (component: any, index: number) => {
       />
     );
   }
-  
+  if (type === "react-listing") {
+    return <Listing data={attributes?.date} key={index} />;
+  }
+
   return (
     <Tag key={index} {...elementProps}>
       {components &&
@@ -252,6 +256,8 @@ const Preview = ({ pageId }: { pageId: string }) => {
               }}
             />
           );
+        } else if (item.type === "react-listing") {
+          return <Listing data={item.attributes?.date} key={index} />;
         } else {
           return <div key={index}>{renderComponent(item, index)}</div>;
         }
